@@ -31,7 +31,6 @@ body {
 @media (min-width: 425px) {
   .container {
     max-width: 425px;
-    background-color: red;
   }
 }
 
