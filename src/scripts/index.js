@@ -44,3 +44,51 @@ function trump(){
 }
 
 trump();
+
+/*  async function fetchNews() {
+    try{
+   const response = await axios.get('https://api.thenewsapi.com/v1/news/all?api_token=bcrUaRq7nGakX8urZvUojmJWt3YpZeLULLHsxf01&search=usd');
+   console.log(response.data)
+    
+    const data = response.data.data;
+    const newsDiv = document.getElementById('newsItem');
+    
+
+ newsDiv.innerHTML = `${data.map((article) => {
+   return   `<img src='${article.image_url}'>
+    <h1>${article.title}</h1>
+    <p>${article.description}</p> `;
+})}`.join(""); ;
+    
+    console.log(response.data)
+    
+}
+catch (error){
+        console.error('Could not fetch news from api', error)
+    }
+}
+ */
+
+async function fetchNews() {
+    try{
+  const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2') 
+  console.log(response.data)
+    
+    const data = response.data.results;
+    const newsDiv = document.getElementById('newsItem');
+    
+ newsDiv.innerHTML = `${data.map((article) => {
+    return `<img src='${article.image_url}'>
+    <h1>${article.title}</h1>
+    <p>${article.description}</p> `;
+})}`.join(""); 
+    
+    console.log(response.data)
+    
+}
+catch (error){
+        console.error('Could not fetch news from api', error)
+    }
+}
+
+fetchNews()
