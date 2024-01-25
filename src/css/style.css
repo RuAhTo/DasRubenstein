@@ -147,13 +147,15 @@ logo {
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
-.ticker {
+@keyframes ticker {
+  0% {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-49%, 0, 0); /* Slightly less than 50% */
   }
 }
+
 
 
 .ticker-wrap {
@@ -227,3 +229,4 @@ footer {
   .container {
     max-width: 2560px;
   }
+}
