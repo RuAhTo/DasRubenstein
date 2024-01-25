@@ -147,16 +147,13 @@ margin-bottom: rem;
 
 @keyframes ticker {
   0% {
-
     transform: translate3d(0, 0, 0);
-    visibility: visible;
   }
-
   100% {
-
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
+
 
 .ticker-wrap {
   position: fixed;
@@ -177,7 +174,7 @@ margin-bottom: rem;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: ticker;
-  animation-duration: 30s;
+  animation: ticker 30s linear infinite;
 }
 
 .ticker__item {
