@@ -98,3 +98,10 @@ catch (error){
     }
 }
  */
+
+function kimsDating(){
+    const text = document.getElementById('kimsText');
+    text.textContent = "Tre saker att tänka på: flörta, prata känslor och visa din personlighet. Var dig själv och undvik att ljuga. Detta gäller både bakom datorskärmen och när du och din träff möts ansikte mot ansikte. Det kommer inte löna sig att fara med osanning då lögner oftast kommer fram till slut. Skriver du något som inte stämmer i din presentation, eller i ett privat meddelande till din dejt, så kan detta avslöjas snabbt när ni väl ses.";
+}
+
+kimsDating ();
