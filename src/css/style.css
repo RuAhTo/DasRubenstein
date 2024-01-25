@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Chomsky;
+  font-weight: normal;
+  src: url("../../bin/fonts/Chomsky.otf") format("opentype");
+}
 
 *:not(head, script) {
   display: block;
@@ -30,6 +35,12 @@ body {
   height: auto; /* Maintains the aspect ratio of the image */
   display: block; /* Makes the image a block-level element */
   margin: 0 auto; /* Centers the image horizontally */
+}
+
+.logo h1 {
+  font-family: Chomsky;
+  font-size: 4rem;
+  font-weight: normal;
 }
 
 header {
@@ -141,8 +152,6 @@ logo {
   transform: 50%;
 }
 
-/* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
-
 @keyframes ticker {
   0% {
     transform: translate3d(0, 0, 0);
@@ -151,8 +160,6 @@ logo {
     transform: translate3d(-49%, 0, 0); /* Slightly less than 50% */
   }
 }
-
-
 
 .ticker-wrap {
   position: fixed;
