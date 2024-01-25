@@ -1,7 +1,7 @@
 :root {
-  --primary-color: black;
+  /* --primary-color: black;
   --accent-color: #6e6eff;
-  --font-color: white;
+  --font-color: white; */
 }
 
 *:not(head, script) {
@@ -172,10 +172,6 @@ logo {
     transform: translate3d(-100%, 0, 0);
   }
 }
-* {
-  box-sizing: border-box;
-}
-$duration: 30s;
 
 @-webkit-keyframes ticker {
   0% {
