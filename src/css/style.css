@@ -1,3 +1,8 @@
+:root {
+  --primary-color: black;
+  --accent-color: #6e6eff;
+  --font-color: white;
+}
 
 *:not(head, script) {
   display: block;
@@ -8,13 +13,13 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
 }
-
 
 body {
   display: flex;
@@ -42,11 +47,10 @@ header {
   width: 90rem;
   height: 10rem;
   background-repeat: no-repeat;
-  
 }
 
-header img{
-width: 30rem;
+header img {
+  width: 30rem;
 }
 
 header::after,
@@ -67,7 +71,6 @@ header::before {
   bottom: -6px; /* Position the second line with some space below the first line */
 }
 
-
 logo {
   max-width: 100%; /* Ensures the image is responsive and fits within the header */
   height: auto; /* Maintains the aspect ratio of the image */
@@ -76,27 +79,25 @@ logo {
   transform: 50%;
 }
 
-
 .header-streck {
-position: absolute;
-overflow: hidden;
-margin-top: 3.5rem;
-height: 1px; /* Adjust the height of the line as needed */
-background-color: rgb(207, 207, 207);
-width: 90rem;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 3.5rem;
+  height: 1px; /* Adjust the height of the line as needed */
+  background-color: rgb(207, 207, 207);
+  width: 90rem;
 }
 
 .navbar {
-overflow: hidden;
-display: flex;
-justify-content: center; /* Center the items horizontally */
-align-items: center; /* Center the items vertically */
-height: 3rem;
-margin-top: auto; /* Pushes the navbar to the bottom */
-background-color: #ffffff; /* Dark background */
-overflow: hidden;
-gap: 2rem;
-margin-bottom: rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 3rem;
+  margin-top: auto; /* Pushes the navbar to the bottom */
+  background-color: #ffffff; /* Dark background */
+  overflow: hidden;
+  gap: 2rem;
 }
 
 .navbar ul {
@@ -106,12 +107,10 @@ margin-bottom: rem;
   display: flex; /* Use flexbox to layout children horizontally */
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-
 }
 .navbar ul li {
   display: flex; /* Flex display for horizontal alignment */
 }
-
 
 .navbar ul li a {
   display: block;
@@ -148,8 +147,6 @@ margin-bottom: rem;
 }
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
-
-
 @-webkit-keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -175,7 +172,9 @@ margin-bottom: rem;
     transform: translate3d(-100%, 0, 0);
   }
 }
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 $duration: 30s;
 
 @-webkit-keyframes ticker {
@@ -204,7 +203,9 @@ $duration: 30s;
   }
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 @keyframes ticker {
   0% {
@@ -251,7 +252,22 @@ $duration: 30s;
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
+.news-item {
+}
 
+.news-item h1 {
+}
+
+.news-item h2 {
+}
+
+.red {
+  color: red;
+  display: inline;
+}
+
+.news-item img {
+}
 
 footer {
   color: white;
@@ -294,5 +310,3 @@ footer {
     max-width: 2560px;
   }
 }
-
-
