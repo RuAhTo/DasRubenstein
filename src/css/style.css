@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Chomsky;
+  font-weight: normal;
+  src: url("../../bin/fonts/Chomsky.otf") format("opentype");
+}
 
 *:not(head, script) {
   display: block;
@@ -8,13 +13,14 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
+  font-size: 16px;
 }
-
 
 body {
   display: flex;
@@ -31,7 +37,12 @@ body {
   margin: 0 auto; /* Centers the image horizontally */
 }
 
-/* Improved header styles */
+.logo h1 {
+  font-family: Chomsky;
+  font-size: 4rem;
+  font-weight: normal;
+}
+
 header {
   margin-top: 3rem;
   position: relative;
@@ -42,11 +53,10 @@ header {
   width: 90rem;
   height: 10rem;
   background-repeat: no-repeat;
-  
 }
 
-header img{
-width: 30rem;
+header img {
+  width: 30rem;
 }
 
 header::after,
@@ -67,7 +77,6 @@ header::before {
   bottom: -6px; /* Position the second line with some space below the first line */
 }
 
-
 logo {
   max-width: 100%; /* Ensures the image is responsive and fits within the header */
   height: auto; /* Maintains the aspect ratio of the image */
@@ -76,27 +85,25 @@ logo {
   transform: 50%;
 }
 
-
 .header-streck {
-position: absolute;
-overflow: hidden;
-margin-top: 3.5rem;
-height: 1px; /* Adjust the height of the line as needed */
-background-color: rgb(207, 207, 207);
-width: 90rem;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 3.5rem;
+  height: 1px; /* Adjust the height of the line as needed */
+  background-color: rgb(207, 207, 207);
+  width: 90rem;
 }
 
 .navbar {
-overflow: hidden;
-display: flex;
-justify-content: center; /* Center the items horizontally */
-align-items: center; /* Center the items vertically */
-height: 3rem;
-margin-top: auto; /* Pushes the navbar to the bottom */
-background-color: #ffffff; /* Dark background */
-overflow: hidden;
-gap: 2rem;
-margin-bottom: rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 3rem;
+  margin-top: auto; /* Pushes the navbar to the bottom */
+  background-color: #ffffff; /* Dark background */
+  overflow: hidden;
+  gap: 2rem;
 }
 
 .navbar ul {
@@ -106,12 +113,10 @@ margin-bottom: rem;
   display: flex; /* Use flexbox to layout children horizontally */
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-
 }
 .navbar ul li {
   display: flex; /* Flex display for horizontal alignment */
 }
-
 
 .navbar ul li a {
   display: block;
@@ -238,24 +243,20 @@ $duration: 30s;
 @keyframes ticker {
   0% {
     transform: translate3d(0, 0, 0);
-    visibility: visible;
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-49%, 0, 0); /* Slightly less than 50% */
   }
 }
 
 .ticker-wrap {
-  position: Static;
-  bottom: 0;
-  margin-left: -50rem;
-  width: 64.4rem;
+  position: fixed;
+  display: inline;
+  top: 23.1%; /* Adjust this value as needed to move the ticker up */
   overflow: hidden;
-  height: 2rem;
+  height: 35px;
   background-color: rgba(0, 0, 0, 0.9);
-  padding-left: 100%;
   box-sizing: content-box;
-  margin-bottom: 41.7rem;
 }
 
 .ticker {
@@ -263,12 +264,11 @@ $duration: 30s;
   height: 2rem;
   line-height: 2rem;
   white-space: nowrap;
-  padding-right: 100%;
   box-sizing: content-box;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: ticker;
-  animation-duration: 30s;
+  animation: ticker 30s linear infinite;
 }
 
 .ticker__item {
@@ -279,8 +279,6 @@ $duration: 30s;
 }
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
-
-
 
 footer {
   color: white;
@@ -323,5 +321,3 @@ footer {
     max-width: 2560px;
   }
 }
-
-

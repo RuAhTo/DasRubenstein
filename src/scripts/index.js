@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from "axios";
 
 function newsTest(){
@@ -44,3 +45,10 @@ function trump(){
 }
 
 trump();
+=======
+import axios from "axios"
+
+async function fetchNews {
+    axios
+}
+>>>>>>> main
