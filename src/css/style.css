@@ -1,3 +1,8 @@
+:root {
+  /* --primary-color: black;
+  --accent-color: #6e6eff;
+  --font-color: white; */
+}
 
 *:not(head, script) {
   display: block;
@@ -8,14 +13,13 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
   font-size: 16px;
-
-}
 
 body {
   display: flex;
@@ -44,8 +48,8 @@ header {
   background-repeat: no-repeat;
 }
 
-header img{
-width: 30rem;
+header img {
+  width: 30rem;
 }
 
 header::after,
@@ -75,25 +79,24 @@ logo {
 }
 
 .header-streck {
-position: absolute;
-overflow: hidden;
-margin-top: 3.5rem;
-height: 1px; /* Adjust the height of the line as needed */
-background-color: rgb(207, 207, 207);
-width: 90rem;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 3.5rem;
+  height: 1px; /* Adjust the height of the line as needed */
+  background-color: rgb(207, 207, 207);
+  width: 90rem;
 }
 
 .navbar {
-overflow: hidden;
-display: flex;
-justify-content: center; /* Center the items horizontally */
-align-items: center; /* Center the items vertically */
-height: 3rem;
-margin-top: auto; /* Pushes the navbar to the bottom */
-background-color: #ffffff; /* Dark background */
-overflow: hidden;
-gap: 2rem;
-margin-bottom: rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 3rem;
+  margin-top: auto; /* Pushes the navbar to the bottom */
+  background-color: #ffffff; /* Dark background */
+  overflow: hidden;
+  gap: 2rem;
 }
 
 .navbar ul {
@@ -103,7 +106,6 @@ margin-bottom: rem;
   display: flex; /* Use flexbox to layout children horizontally */
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-
 }
 .navbar ul li {
   display: flex; /* Flex display for horizontal alignment */
@@ -145,8 +147,7 @@ margin-bottom: rem;
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
-@keyframes ticker {
-  0% {
+.ticker {
     transform: translate3d(0, 0, 0);
   }
   100% {
@@ -226,4 +227,3 @@ footer {
   .container {
     max-width: 2560px;
   }
-}
