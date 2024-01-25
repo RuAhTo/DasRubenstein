@@ -13,9 +13,130 @@
   box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.logo {
+  max-width: 100%; /* Ensures the image is responsive and fits within the header */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Improved header styles */
+header {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the logo vertically */
+  justify-content: center; /* Centers the logo horizontally */
+  width: 90rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  
+}
+
+header img{
+width: 30rem;
+}
+
+header::after,
+header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height of the line as needed */
+  background-color: black;
+}
+
+header::after {
+  bottom: -2px; /* Position the first line right below the header */
+}
+
+header::before {
+  bottom: -6px; /* Position the second line with some space below the first line */
+}
+
+
+logo {
+  max-width: 100%; /* Ensures the image is responsive and fits within the header */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  transform: 50%;
+}
+
+
+.header-streck {
+position: absolute;
+overflow: hidden;
+margin-top: 3.5rem;
+height: 1px; /* Adjust the height of the line as needed */
+background-color: rgb(207, 207, 207);
+width: 90rem;
+}
+
+.navbar {
+overflow: hidden;
+display: flex;
+justify-content: center; /* Center the items horizontally */
+align-items: center; /* Center the items vertically */
+height: 3rem;
+margin-top: auto; /* Pushes the navbar to the bottom */
+background-color: #ffffff; /* Dark background */
+overflow: hidden;
+gap: 2rem;
+margin-bottom: rem;
+}
+
+.navbar ul {
+  list-style-type: none; /* Removes default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to layout children horizontally */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+
+}
+.navbar ul li {
+  display: flex; /* Flex display for horizontal alignment */
+}
+
+
+.navbar ul li a {
+  display: block;
+  color: white; /* Text color for the links */
+  text-align: center;
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.navbar ul li a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 10px;
+  height: 100%;
 }
 
 .container {
@@ -26,6 +147,143 @@ body {
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
+  margin: auto;
+  margin-top: 2rem;
+  transform: 50%;
+}
+
+/* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
+* { box-sizing: border-box; }
+$duration: 30s;
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+* { box-sizing: border-box; }
+$duration: 30s;
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+* { box-sizing: border-box; }
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: Static;
+  bottom: 0;
+  margin-left: -50rem;
+  width: 64.4rem;
+  overflow: hidden;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+  margin-bottom: 41.7rem;
+}
+
+.ticker {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+
+.ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+/* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
+
+
+
+
+.news-item {
+}
+
+.news-item h1{
+}
+
+.news-item h2{
+}
+
+.red {
+  color: red;
+  display: inline;
+
+}
+
+.news-item img{
+
+}
+
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 @media (min-width: 425px) {
@@ -63,3 +321,5 @@ body {
     max-width: 2560px;
   }
 }
+
+
