@@ -142,7 +142,8 @@ logo {
 .container {
   display: flex;
   flex-direction: row-reverse;
-  width: 100%;
+  max-width: 1200px;
+  
   
   height: 100vh;
   padding-left: 0.5rem;
@@ -152,14 +153,23 @@ logo {
   margin: auto;
   margin-top: 2rem;
   transform: 50%;
+  border: solid;
 }
 
 aside {
-  width: 200px;
+  padding: 15px;
+  width: 220px;
   background: #ffffff;
   height: 100%;
 }
 
+main{
+  margin-top: 3px;
+  padding: 15px;
+  border: solid;
+  border-width: thin;
+  
+}
 .kimsDating{
   height: 200px;
   width: 200px;
@@ -174,7 +184,7 @@ aside {
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
 .news-item {
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
 /*   margin-top:100px;
   margin-left: 30%; */
   width: 40rem;
@@ -227,6 +237,7 @@ aside {
   height: 35px;
   background-color: rgba(0, 0, 0, 0.9);
   box-sizing: content-box;
+  width: 2000px;
 }
 
 .ticker {

@@ -1,9 +1,12 @@
 import axios from "axios";
+import mockData from "../mockData.json";
 
+ /* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
 
-async function fetchNews() {
+/* async function fetchNews() {
     try{
-     const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2');
+    
+    const response = await axios.get('mockData');
     console.log(response.data);
     
     const data = response.data.results;
@@ -27,7 +30,23 @@ catch (error){
     }
 }
 
-fetchNews()
+fetchNews() */
+
+
+
+function fetchNews() {
+    console.log("Nu kom det in MOCKDATA!");
+
+    const data = mockData.results;
+    const newsDiv = document.getElementById('newsItem');
+    newsDiv.innerHTML = data.map(article => {
+        return `<img src='${article.image_url}'>
+                <h1>${article.title}</h1>
+                <p>${article.description}</p>`;
+    }).join("");
+}
+
+fetchNews();
 
 /* 
 function newsTest(){
@@ -105,3 +124,25 @@ function kimsDating(){
 }
 
 kimsDating ();
+
+
+
+
+var quotes = new Array();
+var numberOfQuotes = 0;
+var quotes = new Array();
+var numberOfQuotes = 0;
+function addQuots(quote)
+{
+quotes[numberOfQuotes++] = quote;
+console.log("Här kommer det random shit:" + quotes)
+const data = document.getElementById()
+}
+// Add quotes
+addQuots ("Slumpmässigt citat<br>Nummer ett");
+addQuots ("Slumpmässigt citat<br>Nummer två");
+addQuots ("Slumpmässigt citat<br>Nummer tre");
+addQuots ("Slumpmässigt citat<br>Nummer fyra");
+addQuots ("Slumpmässigt citat<br>Nummer fem");
+addQuots ("Slumpmässigt citat<br>Nummer sex");
+
