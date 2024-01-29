@@ -123,24 +123,35 @@ catch (error){
 }
  */
 
-var imagesArray = new Array(7);
+
+var imagesArray = new Array(9);
 imagesArray[0] = new Image();
-imagesArray[0].src = "../images/saab/saab1.png";
+imagesArray[0].src = "/src/images/saab/saab1.png";
 imagesArray[1] = new Image();
-imagesArray[1].src = "../images/saab/saab2.png";
-/* imagesArray[2] = new Ima..ge();
-imagesArray[2].src = new "https://www.example.com/images/image1.jpg";
+imagesArray[1].src = "/src/images/saab/saab2.png";
+imagesArray[2] = new Image();
+imagesArray[2].src = "/src/images/saab/saab3.png";
 imagesArray[3] = new Image();
-imagesArray[3].src = new "alligator.jpg";
+imagesArray[3].src = "/src/images/saab/saab4.png";
 imagesArray[4] = new Image();
-imagesArray[4].src = new "fish.jpg";
+imagesArray[4].src = "/src/images/saab/saab5.png";
 imagesArray[5] = new Image();
-imagesArray[5].src = new "parrot.jpg";
+imagesArray[5].src = "/src/images/saab/saab6.png";
 imagesArray[6] = new Image();
-imagesArray[6].src = new "cat.jpg"; */
+imagesArray[6].src = "/src/images/saab/saab7.png";
+imagesArray[7] = new Image();
+imagesArray[7].src = "/src/images/saab/saab8.png";
+imagesArray[8] = new Image();
+imagesArray[8].src = "/src/images/saab/saab9.png";
+imagesArray[9] = new Image();
+imagesArray[9].src = "/src/images/saab/saab10.png";
+
+
+
+
 
 function displaySaab() {
-    let num = Math.floor(Math.random() * imagesArray.lenght);
+    let num = Math.floor(Math.random() * imagesArray.length);
     const img = document.getElementById('randomSaab');
     img.src = imagesArray[num].src;
 
