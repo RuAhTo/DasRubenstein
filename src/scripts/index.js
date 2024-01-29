@@ -32,11 +32,13 @@ catch (error){
 
 fetchNews() */
 
+import{fetchNews} from '../scripts/nyheter';
+fetchNews();
 
 
-function fetchNews() {
+
+/* function fetchNews() {
     console.log("Nu kom det in MOCKDATA!");
-
     const data = mockData.results;
     const newsDiv = document.getElementById('newsItem');
     newsDiv.innerHTML = data.map(article => {
@@ -47,25 +49,11 @@ function fetchNews() {
 }
 
 fetchNews();
+ */
 
-/* 
-function newsTest(){
-    const url = `https://api.worldnewsapi.com/search-news?text=saab/source-countries=sv/&language=en&api-key=d7d656cae7b2484682b91942b7092e48`;
 
-    axios.get(url)
-        .then(response => {
-            const data = response.data;
-            console.log("hämtningen lyckades! :" + response)
-            const newsGrej = document.getElementById('news');
-            newsGrej.textContent = data + "HÄR KOMMER DET SNART NYHETER";
-        })
-        .catch(error =>
-            console.log("DET BLEV FEEEELL!!!", error))
-};
 
-newsTest();
-
-function finHund(){
+/* function finHund(){
     const url = 'https://dog.ceo/api/breeds/image/random';
     axios.get(url)
         .then(response => {
@@ -77,12 +65,12 @@ function finHund(){
         })
     };
 
-    finHund();
+    finHund(); */
 
 
 
 
-function trump(){
+/* function trump(){
     const url = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
     axios.get(url)
         .then(response => {
