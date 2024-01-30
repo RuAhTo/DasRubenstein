@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     let header = document.querySelector('header');
 
     
-    if (window.pageYOffset > 160) { // Adjust this value based on your navbar height
+    if (window.pageYOffset > 127) { // Adjust this value based on your navbar height
         header.classList.add('hide-after');
 
         ticker.style.position = 'fixed';
@@ -34,10 +34,10 @@ window.addEventListener('scroll', function() {
         navbar.style.top = '35px'; // Clear top style
     
         leftAd.style.position = 'absolute'; // Reset to original position
-        leftAd.style.top = '0px'; // Reset to original top value
+        leftAd.style.top = '-40px'; // Reset to original top value
     
         rightAd.style.position = 'absolute'; // Reset to original position
-        rightAd.style.top = '0px'; // Reset to original top value
+        rightAd.style.top = '-40px'; // Reset to original top value
     }
   });
 
