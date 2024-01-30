@@ -93,10 +93,10 @@ fetchNews();
 
 trump(); */
 
-/*  async function fetchNews() {
+ /* async function fetchNews() {
     try{
    const response = await axios.get('https://api.thenewsapi.com/v1/news/all?api_token=bcrUaRq7nGakX8urZvUojmJWt3YpZeLULLHsxf01&search=usd');
-   console.log(response.data)
+   console.log("NU KOM DET IN MASSA NEWSSS" + response.data)
     
     const data = response.data.data;
     const newsDiv = document.getElementById('newsItem');
@@ -115,7 +115,9 @@ catch (error){
         console.error('Could not fetch news from api', error)
     }
 }
- */
+
+fetchNews(); */
+
 
 
 
