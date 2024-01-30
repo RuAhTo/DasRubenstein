@@ -152,13 +152,13 @@ logo {
   display: flex;
   flex-direction: row-reverse;
   max-width: 1200px;
-  height: 100vh;
+  height: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 54px;
   transform: 50%;
   border: solid;
 }
@@ -173,6 +173,7 @@ aside {
 main{
   margin-top: 3px;
   padding: 15px;
+  height: 100%;
   border: solid;
   border-width: thin;
   
