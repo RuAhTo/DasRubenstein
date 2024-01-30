@@ -34,7 +34,8 @@ body {
   max-width: 100%; /* Ensures the image is responsive and fits within the header */
   height: auto; /* Maintains the aspect ratio of the image */
   display: block; /* Makes the image a block-level element */
-  margin: 0 auto; /* Centers the image horizontally */
+  margin: auto auto; /* Centers the image horizontally */
+  margin-top: -20px;
 }
 
 .logo h1 {
@@ -100,7 +101,7 @@ logo {
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
   height: 3rem;
-  margin-top: auto; /* Pushes the navbar to the bottom */
+  margin-top: -60px; /* Pushes the navbar to the bottom */
   background-color: #ffffff; /* Dark background */
   overflow: hidden;
   gap: 2rem;
@@ -245,7 +246,7 @@ main{
   height: 35px;
   background-color: rgba(0, 0, 0, 0.9);
   box-sizing: content-box;
-  width: 2000px;
+  width: 1900px;
 }
 
 .ticker {
