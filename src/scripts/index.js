@@ -22,7 +22,7 @@ import mockData from "../mockData.json";
   });
  */
 //Kims dejtingskola
-import {loadKimQuotes} from '/src/scripts/kim.js';
+import {loadKimQuotes} from '../scripts/kim';
 
 loadKimQuotes();
 
@@ -138,7 +138,7 @@ catch (error){
 
 
 
-const quotes = new Array();
+/* const quotes = new Array();
 let numberOfQuotes = 0;
 let currentQuoteIndex = 0;
 
@@ -169,10 +169,10 @@ kimsDejting("Killar älskar när tjejer dricker öl. Antar att det skapar en ill
 
 visaKim();
 
-setInterval(visaKim, 20000);
+setInterval(visaKim, 20000); */
 
 
-/* var imagesArray = new Array(7);
+var imagesArray = new Array(9);
 imagesArray[0] = new Image();
 imagesArray[0].src = "/src/images/saab/saab1.png";
 imagesArray[1] = new Image();
@@ -186,10 +186,20 @@ imagesArray[4].src = "/src/images/saab/saab5.png";
 imagesArray[5] = new Image();
 imagesArray[5].src = "/src/images/saab/saab6.png";
 imagesArray[6] = new Image();
-imagesArray[6].src = new "cat.jpg"; */ 
+imagesArray[6].src = "/src/images/saab/saab7.png";
+imagesArray[7] = new Image();
+imagesArray[7].src = "/src/images/saab/saab8.png";
+imagesArray[8] = new Image();
+imagesArray[8].src = "/src/images/saab/saab9.png";
+imagesArray[9] = new Image();
+imagesArray[9].src = "/src/images/saab/saab10.png";
 
-/* function displaySaab() {
-    let num = Math.floor(Math.random() * imagesArray.lenght);
+
+
+
+
+function displaySaab() {
+    let num = Math.floor(Math.random() * imagesArray.length);
     const img = document.getElementById('randomSaab');
     img.src = imagesArray[num].src;
 
