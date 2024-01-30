@@ -8,6 +8,13 @@ import {loadKimQuotes} from '/src/scripts/kim.js';
 
 loadKimQuotes();
 
+import {loadOlleQuotes} from '../scripts/olle';
+
+loadOlleQuotes();
+
+import {loadDodenQuotes} from '../scripts/doden';
+
+loadDodenQuotes();
 
  /* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
 
@@ -189,5 +196,27 @@ function displaySaab() {
 
   }
 
-  setInterval(displaySaab, 2000);
+  setInterval(displaySaab, 1000);
   
+
+var imagesArray2 = new Array(5);
+imagesArray2[0] = new Image();
+imagesArray2[0].src = "/src/images/pyramider/pyramid1.png";
+imagesArray2[1] = new Image();
+imagesArray2[1].src = "/src/images/pyramider/pyramid2.png";
+imagesArray2[2] = new Image();
+imagesArray2[2].src = "/src/images/pyramider/pyramid3.png";
+imagesArray2[3] = new Image();
+imagesArray2[3].src = "/src/images/pyramider/pyramid4.png";
+imagesArray2[4] = new Image();
+imagesArray2[4].src = "/src/images/pyramider/pyramid5.png";
+
+
+function displayPyramid() {
+    let num = Math.floor(Math.random() * imagesArray2.length);
+    const img = document.getElementById('randomPyramid');
+    img.src = imagesArray2[num].src;
+
+  }
+
+  setInterval(displayPyramid, 1500);

@@ -17,7 +17,7 @@ export async function loadKimQuotes() {
     kimText.innerText = quotes[randomIndex];
   }
 
-  setInterval(showKim, 2000);
+  setInterval(showKim, 40000);
 }
 
 

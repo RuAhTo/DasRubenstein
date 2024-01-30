@@ -165,14 +165,14 @@ logo {
 
 aside {
   padding: 15px;
-  width: 220px;
+  width: 200px;
   background: #ffffff;
   height: 100%;
 }
 
 main{
   margin-top: 0px;
-  padding: 15px;
+  padding: 10px;
   height: 100%;
   border: solid rgb(211, 211, 211);
   border-top: none;
@@ -182,8 +182,8 @@ main{
   
 }
 .kimsDating{
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
 }
 
 .kimsText{
@@ -194,6 +194,57 @@ main{
   border-width: thin;
   padding: 7px;
 }
+
+.olle{
+  margin-top: 20px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+
+}
+
+.olleSvar{
+  width: 190px;
+  height: 60px;
+ 
+  margin-right: 10px;
+  
+}
+
+.ollesText{
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
+.doden{
+  margin-top: 20px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+
+}
+
+.dodenSvar{
+  width: 190px;
+  height: 60px;
+ 
+  margin-right: 10px;
+  
+}
+
+.dodenText{
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
@@ -365,9 +416,10 @@ main{
   background-repeat: no-repeat;
 }
 
-#randomSaab {
-  max-width: 200px;
-  max-height: 200px;
+#randomSaab, #randomPyramid {
+  width: 180px;
+  /* max-height: 300px; */
+  height: 105px;
   margin-top: 20px;
 }
 
