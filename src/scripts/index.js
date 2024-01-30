@@ -210,6 +210,8 @@ imagesArray2[3] = new Image();
 imagesArray2[3].src = "/src/images/pyramider/pyramid4.png";
 imagesArray2[4] = new Image();
 imagesArray2[4].src = "/src/images/pyramider/pyramid5.png";
+imagesArray2[5] = new Image();
+imagesArray2[5].src = "/src/images/pyramider/pyramid6.png";
 
 
 function displayPyramid() {
@@ -219,4 +221,4 @@ function displayPyramid() {
 
   }
 
-  setInterval(displayPyramid, 1500);
+  setInterval(displayPyramid, 800);
