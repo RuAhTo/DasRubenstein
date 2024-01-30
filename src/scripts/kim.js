@@ -19,3 +19,5 @@ export async function loadKimQuotes() {
 
   setInterval(showKim, 20000);
 }
+
+
