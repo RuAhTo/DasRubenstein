@@ -37,6 +37,9 @@ fetchNews();
 
 
 
+
+
+
 /* function fetchNews() {
     console.log("Nu kom det in MOCKDATA!");
     const data = mockData.results;
@@ -143,7 +146,7 @@ visaKim();
 setInterval(visaKim, 20000);
 
 
-var imagesArray = new Array(7);
+/* var imagesArray = new Array(7);
 imagesArray[0] = new Image();
 imagesArray[0].src = "../images/saab/saab1.png";
 imagesArray[1] = new Image();
@@ -157,9 +160,9 @@ imagesArray[4].src = new "fish.jpg";
 imagesArray[5] = new Image();
 imagesArray[5].src = new "parrot.jpg";
 imagesArray[6] = new Image();
-imagesArray[6].src = new "cat.jpg"; */
+imagesArray[6].src = new "cat.jpg"; */ 
 
-function displaySaab() {
+/* function displaySaab() {
     let num = Math.floor(Math.random() * imagesArray.lenght);
     const img = document.getElementById('randomSaab');
     img.src = imagesArray[num].src;
@@ -167,4 +170,4 @@ function displaySaab() {
   }
 
   setInterval(displaySaab, 2000);
-  
+   */
