@@ -1,6 +1,32 @@
 import axios from "axios";
 import mockData from "../mockData.json";
 
+
+//Scrollnings-skit så banners o navbar följer med när man scrollar neråt
+/* window.addEventListener('scroll', function() {
+    let navbar = document.querySelector('.navbar');
+    let banner = document.querySelector('.left-ad');
+    let  = document.querySelector('.left-ad');
+
+    
+    if (window.pageYOffset > 60) { // Adjust this value based on your navbar height
+      navbar.style.position = 'fixed';
+      navbar.style.top = '0';
+      banner.style.position = 'fixed';
+      banner.style.top = '0';
+    } else {
+      navbar.style.position = 'relative';
+      banner.style.position = 'absolute';
+      banner.style.top = '60px'; // Adjust this back to the initial top value
+    }
+  });
+ */
+//Kims dejtingskola
+import {loadKimQuotes} from '/src/scripts/kim.js';
+
+loadKimQuotes();
+
+
  /* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
 
 /* async function fetchNews() {
@@ -148,17 +174,17 @@ setInterval(visaKim, 20000);
 
 /* var imagesArray = new Array(7);
 imagesArray[0] = new Image();
-imagesArray[0].src = "../images/saab/saab1.png";
+imagesArray[0].src = "/src/images/saab/saab1.png";
 imagesArray[1] = new Image();
-imagesArray[1].src = "../images/saab/saab2.png";
-/* imagesArray[2] = new Ima..ge();
-imagesArray[2].src = new "https://www.example.com/images/image1.jpg";
+imagesArray[1].src = "/src/images/saab/saab2.png";
+imagesArray[2] = new Image();
+imagesArray[2].src = "/src/images/saab/saab3.png";
 imagesArray[3] = new Image();
-imagesArray[3].src = new "alligator.jpg";
+imagesArray[3].src = "/src/images/saab/saab4.png";
 imagesArray[4] = new Image();
-imagesArray[4].src = new "fish.jpg";
+imagesArray[4].src = "/src/images/saab/saab5.png";
 imagesArray[5] = new Image();
-imagesArray[5].src = new "parrot.jpg";
+imagesArray[5].src = "/src/images/saab/saab6.png";
 imagesArray[6] = new Image();
 imagesArray[6].src = new "cat.jpg"; */ 
 
@@ -170,4 +196,4 @@ imagesArray[6].src = new "cat.jpg"; */
   }
 
   setInterval(displaySaab, 2000);
-   */
+  

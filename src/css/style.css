@@ -261,6 +261,66 @@ main{
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
+.right-ad {
+  position: absolute;
+  background-color: black;
+  margin-left: 85rem;
+  margin-top: 17rem;
+  width: 400px;
+  height: 500px;
+  z-index: 99;
+  background-image: url(/src/images/slobodan-reklam.png);
+  background-size: 100%;
+}
+/* 
+.left-ad {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 17rem;
+  width: 400px;
+  height: 370px;
+
+  z-index: 99;
+  background-image: url(/src/images/image.png);
+  background-size: 100%;
+  background-position: center -20px; 
+}
+
+.left-ad-header {
+  position: absolute;
+  width: 400px;
+  height: 370px;
+  z-index: 100;
+  margin-top: 135px;
+  margin-left: 5px;
+  background-image: url(/src/images/RUBENSTEIN.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+ */
+
+.left-ad2 {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 17rem;
+  width: 400px;
+  height: 270px;
+
+  z-index: 99;
+  background-image: url(/src/images/eduardo/spray3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#randomSaab {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 20px;
+}
+
 footer {
   color: white;
   text-align: center;
