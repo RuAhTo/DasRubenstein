@@ -13,28 +13,25 @@ document.getElementById('datum').addEventListener('click', function(event){
     fetchDate();
 })
 
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Keyup event listener for the input field
     document.getElementById('search').addEventListener('keyup', function(event) {
         if (event.key === 'Enter') {
-            const sökOrd = document.getElementById('search').value;
-            fetchSearch();
+            const sökOrd = document.getElementById('search').value; // Capture the search term
+            fetchSearch(sökOrd); // Pass it to fetchSearch function
         }
     });
 });
-
-function fetchSearch() {
-    console.log("Searching for:", searchTerm);
-    const data = mockData.results; // Replace with your actual data source
-    const searchTerm = sökord;
-    const lowerCaseSearchTerm = searchTerm.toLowerCase();
+function fetchSearch(sökOrd) {
+    console.log("Searching for:", sökOrd);
+    const data = mockData.results; // Use your actual data source
+    const lowerCaseSearchTerm = sökOrd.toLowerCase();
     const newsDiv = document.getElementById('newsItem');
     newsDiv.innerHTML = data
         .filter(article => {
             const title = article.title.toLowerCase();
             const description = article.description.toLowerCase();
-            const keywords = article.keywords.map(keyword => keyword.toLowerCase());
+            // Ensure keywords is not null before calling map
+            const keywords = article.keywords ? article.keywords.map(keyword => keyword.toLowerCase()) : [];
             return title.includes(lowerCaseSearchTerm) ||
                    description.includes(lowerCaseSearchTerm) ||
                    keywords.some(keyword => keyword.includes(lowerCaseSearchTerm));
@@ -46,6 +43,7 @@ function fetchSearch() {
         })
         .join("");
 }
+
 
 // Initial fetch to display some news
 export {fetchSearch}
