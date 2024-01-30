@@ -7,6 +7,7 @@ window.addEventListener('scroll', function() {
     let rightAd2 = document.querySelector('.right-ad2');
     let leftAd = document.querySelector('.left-ad');
     let leftAd2 = document.querySelector('.left-ad2');
+    let leftAd3 = document.querySelector('.left-ad3');
     let header = document.querySelector('header');
 
     
@@ -24,6 +25,8 @@ window.addEventListener('scroll', function() {
       leftAd2.style.top = '-170px';
       leftAd.style.position = 'fixed';
       leftAd.style.top = '-170px';
+      leftAd3.style.position = 'fixed';
+      leftAd3.style.top = '-170px';
       rightAd.style.position = 'fixed';
       rightAd.style.top = '-170px';
       rightAd2.style.position = 'fixed';
@@ -45,6 +48,9 @@ window.addEventListener('scroll', function() {
             
         leftAd.style.position = 'absolute'; // Reset to original position
         leftAd.style.top = '-40px'; // Reset to original top value
+
+        leftAd3.style.position = 'absolute'; // Reset to original position
+        leftAd3.style.top = '-40px'; // Reset to original top value
 
     
         rightAd.style.position = 'absolute'; // Reset to original position

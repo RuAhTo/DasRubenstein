@@ -71,7 +71,7 @@ function fetchDate() {
     })
     .map(article => {
         // Convert processed articles into HTML strings
-        return `<img src='${article.imageUrl}'>
+        return `<img src='${article.imageUrl}' style='max-width: 600px;'>
                 <h1>${article.title}</h1>
                 <p>${article.description}</p>`;
     })  
@@ -106,7 +106,7 @@ function fetchPoliticNews() {
     })
     .map(article => {
         // Convert processed articles into HTML strings
-        return `<img src='${article.imageUrl}'>
+        return `<img src='${article.imageUrl}' style='max-width: 600px;'>
                 <h1>${article.title}</h1>
                 <p>${article.description}</p>`;
     })  
@@ -136,7 +136,7 @@ function fetchTopNews() {
     })
     .map(article => {
         // Convert processed articles into HTML strings
-        return `<img src='${article.imageUrl}'>
+        return `<img src='${article.imageUrl}' style='max-width: 600px;'>
                 <h1>${article.title}</h1>
                 <p>${article.description}</p>`;
     })  
@@ -158,8 +158,8 @@ function fetchNews() {
     const data = mockData.results;
     const newsDiv = document.getElementById('newsItem');
     newsDiv.innerHTML = data.map(article => {
-        return `<img src='${article.image_url}'>
-                <h1>${article.title}</h1>
+        return `<img src='${article.image_url}' style='max-width: 600px;'>
+                <h1>${article.title}</h1> 
                 <p>${article.description}</p>`;
     }).join("");
 }

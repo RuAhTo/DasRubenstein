@@ -205,6 +205,10 @@ main{
 
 }
 
+.news.item img{
+  width: 30px;
+}
+
 .news{
   height: 200px;
   width: 50px;
@@ -295,11 +299,11 @@ main{
   width: 400px;
   height: 300px;
   z-index: 99;
-  background-image: url(../images/ljud&ljus.png);
+  background-image: url(/src/images/takbox.png);
   background-size: 100%;
   
 }
-.left-ad {
+/* .left-ad {
   position: absolute;
   background-color: black;
   margin-left: -85rem;
@@ -310,13 +314,26 @@ main{
   background-image: url(/src/images/takbox.png);
   background-size: 110%;
   background-position: center; 
-}
+} */
 
 .left-ad img.stretch {
   object-fit: fill;
   width: auto;
   height: 350px;
 
+}
+
+.left-ad3 {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 570px;
+  width: 400px;
+  height: 880px;
+  z-index: 99;
+  background-image: url(/src/images/Yoggi.png);
+  background-size: 110%;
+  background-position: center; 
 }
 
 /* 
