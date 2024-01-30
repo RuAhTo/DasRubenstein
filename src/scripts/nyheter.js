@@ -14,9 +14,6 @@ document.getElementById('datum').addEventListener('click', function(event){
 })
 
 
-/* document.getElementById('search').addEventListener('click', function(event){
-    fetchSearch();
-}) */
 document.addEventListener('DOMContentLoaded', function() {
     // Keyup event listener for the input field
     document.getElementById('search').addEventListener('keyup', function(event) {
