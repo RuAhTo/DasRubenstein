@@ -1,7 +1,26 @@
-// import axios from "axios";
-// import mockData from "../mockData.json";
+import axios from "axios";
+import mockData from "../mockData.json";
 
 
+//Scrollnings-skit så banners o navbar följer med när man scrollar neråt
+/* window.addEventListener('scroll', function() {
+    let navbar = document.querySelector('.navbar');
+    let banner = document.querySelector('.left-ad');
+    let  = document.querySelector('.left-ad');
+
+    
+    if (window.pageYOffset > 60) { // Adjust this value based on your navbar height
+      navbar.style.position = 'fixed';
+      navbar.style.top = '0';
+      banner.style.position = 'fixed';
+      banner.style.top = '0';
+    } else {
+      navbar.style.position = 'relative';
+      banner.style.position = 'absolute';
+      banner.style.top = '60px'; // Adjust this back to the initial top value
+    }
+  });
+ */
 //Kims dejtingskola
 import {loadKimQuotes} from '/src/scripts/kim.js';
 
