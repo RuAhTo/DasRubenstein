@@ -152,8 +152,6 @@ logo {
   display: flex;
   flex-direction: row-reverse;
   max-width: 1200px;
-  
-  
   height: 100vh;
   padding-left: 0.5rem;
   padding-right: 0.5rem;

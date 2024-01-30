@@ -38,6 +38,7 @@ window.addEventListener('scroll', function() {
     
         rightAd.style.position = 'absolute'; // Reset to original position
         rightAd.style.top = '0px'; // Reset to original top value
-    
     }
   });
+
+  
