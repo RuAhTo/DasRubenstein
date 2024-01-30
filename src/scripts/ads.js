@@ -4,7 +4,8 @@ window.addEventListener('scroll', function() {
     let navbar = document.querySelector('.navbar');
     let ticker = document.querySelector('.ticker-wrap');
     let rightAd = document.querySelector('.right-ad');
-    let leftAd = document.querySelector('.left-ad2');
+    let leftAd = document.querySelector('.left-ad');
+    let leftAd2 = document.querySelector('.left-ad2');
     let header = document.querySelector('header');
 
     
@@ -18,6 +19,8 @@ window.addEventListener('scroll', function() {
   
       navbar.style.position = 'fixed';
       navbar.style.top = '60px';
+      leftAd2.style.position = 'fixed';
+      leftAd2.style.top = '-170px';
       leftAd.style.position = 'fixed';
       leftAd.style.top = '-170px';
       rightAd.style.position = 'fixed';
@@ -33,8 +36,13 @@ window.addEventListener('scroll', function() {
         navbar.style.position = 'relative'; // Reset to original position
         navbar.style.top = '35px'; // Clear top style
     
+        leftAd2.style.position = 'absolute'; // Reset to original position
+        leftAd2.style.top = '-40px'; // Reset to original top value
+
+            
         leftAd.style.position = 'absolute'; // Reset to original position
         leftAd.style.top = '-40px'; // Reset to original top value
+
     
         rightAd.style.position = 'absolute'; // Reset to original position
         rightAd.style.top = '-40px'; // Reset to original top value

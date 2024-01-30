@@ -286,21 +286,28 @@ main{
   background-image: url(/src/images/slobodan-reklam.png);
   background-size: 100%;
 }
-/* 
+
 .left-ad {
   position: absolute;
   background-color: black;
   margin-left: -85rem;
-  margin-top: 17rem;
+  margin-top: 570px;
   width: 400px;
-  height: 370px;
-
+  height: 330px;
   z-index: 99;
-  background-image: url(/src/images/image.png);
-  background-size: 100%;
-  background-position: center -20px; 
+  background-image: url(/src/images/takbox.png);
+  background-size: 110%;
+  background-position: center; 
 }
 
+.left-ad img.stretch {
+  object-fit: fill;
+  width: auto;
+  height: 350px;
+
+}
+
+/* 
 .left-ad-header {
   position: absolute;
   width: 400px;
