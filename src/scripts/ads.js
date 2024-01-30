@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('hide-after');
 
         ticker.style.position = 'relative'; // Reset to original position
-        ticker.style.top = '43px'; // Reset top position
+        ticker.style.top = '44px'; // Reset top position
         ticker.style.height = '53px'; // Reset top position
 
     
@@ -34,10 +34,10 @@ window.addEventListener('scroll', function() {
         navbar.style.top = '20px'; // Clear top style
     
         leftAd.style.position = 'absolute'; // Reset to original position
-        leftAd.style.top = '5px'; // Reset to original top value
+        leftAd.style.top = '0px'; // Reset to original top value
     
         rightAd.style.position = 'absolute'; // Reset to original position
-        rightAd.style.top = '5px'; // Reset to original top value
+        rightAd.style.top = '0px'; // Reset to original top value
     
     }
   });
