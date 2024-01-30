@@ -176,6 +176,8 @@ main{
   height: 100%;
   border: solid rgb(211, 211, 211);
   border-top: none;
+  border-left: none;
+
   border-width: thin;
   
 }
