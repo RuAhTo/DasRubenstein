@@ -2,60 +2,8 @@
     "status": "success",
     "totalResults": 365158,
     "results": [
-      {
-        "article_id": "2e368534cc3b8d3ab11fa728d40281e9",
-        "title": "MARIJA LJUBI SINA, DOK ON BEZBRIŽNO SPAVA Šerifovićeva snimila nikad emotivnije kadrove iz doma, ovakvu je retko viđate",
-        "link": "https://www.alo.rs/vip/estrada/861225/marija-serifovic-uspavljuje-sina/vest",
-        "keywords": [
-          "vip"
-        ],
-        "creator": null,
-        "video_url": null,
-        "description": "Emocijama se ne vidi kraj!",
-        "content": "ONLY AVAILABLE IN PAID PLANS",
-        "pubDate": "2024-01-25 21:21:00",
-        "image_url": "https://www.alo.rs/data/images/2024-01-25/868913_alo-ilustracije-jelena_m.png",
-        "source_id": "alo",
-        "source_url": "https://www.alo.rs",
-        "source_priority": 12337,
-        "country": [
-          "serbia"
-        ],
-        "category": [
-          "top"
-        ],
-        "language": "croatian",
-        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS"
-      },
-      {
-        "article_id": "049b777448473720856b219f80c4d366",
-        "title": "Sindicato bancario denuncia ajuste salarial diferencial para personal de confianza de la ANV",
-        "link": "https://www.elobservador.com.uy/nota/sindicato-bancario-denuncia-ajuste-salarial-diferencial-para-personal-de-confianza-de-la-anv-2024125182149",
-        "keywords": null,
-        "creator": null,
-        "video_url": null,
-        "description": "Sindicato bancario denuncia ajuste salarial diferencial para personal de confianza de la ANV",
-        "content": "ONLY AVAILABLE IN PAID PLANS",
-        "pubDate": "2024-01-25 21:21:00",
-        "image_url": "https://cdn.elobservador.com.uy/adjuntos/181/imagenes/002/290/0002290011.webp?&extw=jpg&cw=350",
-        "source_id": "elobservador",
-        "source_url": "https://www.elobservador.com.uy",
-        "source_priority": 112879,
-        "country": [
-          "uruguay"
-        ],
-        "category": [
-          "business"
-        ],
-        "language": "spanish",
-        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS"
-      },
+      
+      
       {
         "article_id": "e04a905f50c24a54ff6a77a5867ba9a7",
         "title": "Fedele difende Zielinski: \"Ha ragione ad essere arrabbiato: vi dico cosa ha fatto ADL\"",
