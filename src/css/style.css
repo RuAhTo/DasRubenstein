@@ -104,6 +104,9 @@ logo {
   background-color: #ffffff; /* Dark background */
   overflow: hidden;
   gap: 2rem;
+  width: 100%; /* Ensures navbar takes full width */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+
 }
 
 .navbar ul {
@@ -130,6 +133,11 @@ logo {
   background-color: #ddd; /* Background color on hover */
   color: black; /* Text color on hover */
 }
+
+.hide-after::after {
+  content: none; /* or 'display: none;' */
+}
+
 
 .grid-container {
   display: grid;
