@@ -160,7 +160,7 @@ logo {
   margin: auto;
   margin-top: 54px;
   transform: 50%;
-  border: solid;
+  border: none;
 }
 
 aside {
@@ -174,7 +174,7 @@ main{
   margin-top: 3px;
   padding: 15px;
   height: 100%;
-  border: solid;
+  border: solid rgb(211, 211, 211);
   border-width: thin;
   
 }
@@ -186,7 +186,7 @@ main{
 .kimsText{
   width: 200px;
   height: 350px;
-  border: solid;
+  border: solid rgb(206, 206, 206);
   border-width: thin;
 }
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
