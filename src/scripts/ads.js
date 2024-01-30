@@ -4,6 +4,7 @@ window.addEventListener('scroll', function() {
     let navbar = document.querySelector('.navbar');
     let ticker = document.querySelector('.ticker-wrap');
     let rightAd = document.querySelector('.right-ad');
+    let rightAd2 = document.querySelector('.right-ad2');
     let leftAd = document.querySelector('.left-ad');
     let leftAd2 = document.querySelector('.left-ad2');
     let header = document.querySelector('header');
@@ -25,6 +26,8 @@ window.addEventListener('scroll', function() {
       leftAd.style.top = '-170px';
       rightAd.style.position = 'fixed';
       rightAd.style.top = '-170px';
+      rightAd2.style.position = 'fixed';
+      rightAd2.style.top = '-170px';
     } else {
         header.classList.remove('hide-after');
 
@@ -46,6 +49,12 @@ window.addEventListener('scroll', function() {
     
         rightAd.style.position = 'absolute'; // Reset to original position
         rightAd.style.top = '-40px'; // Reset to original top value
+
+
+        rightAd2.style.position = 'absolute'; // Reset to original position
+        rightAd2.style.top = '-40px'; // Reset to original top value
+
+
     }
   });
 

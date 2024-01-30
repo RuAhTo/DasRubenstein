@@ -287,6 +287,18 @@ main{
   background-size: 100%;
 }
 
+.right-ad2 {
+  position: absolute;
+  background-color: black;
+  margin-left: 85rem;
+  margin-top: 800px;
+  width: 400px;
+  height: 300px;
+  z-index: 99;
+  background-image: url(../images/ljud&ljus.png);
+  background-size: 100%;
+  
+}
 .left-ad {
   position: absolute;
   background-color: black;
