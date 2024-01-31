@@ -6,6 +6,8 @@ window.addEventListener('scroll', function() {
   let leftAd = document.querySelector('.left-ad');
   let leftAd2 = document.querySelector('.left-ad2');
   let leftAd3 = document.querySelector('.left-ad3');
+  let annons = document.querySelector('.annons');  
+  let annons2 = document.querySelector('.annons2');  
   let header = document.querySelector('header');
   let viewportHeight = window.innerHeight; // Get the viewport height for a full page scroll
 
@@ -27,6 +29,10 @@ window.addEventListener('scroll', function() {
     rightAd2.style.position = 'fixed';
     rightAd2.style.top = '-170px';
     rightAd2.style.opacity = '0';
+    annons.style.position = 'fixed';
+    annons2.style.position = 'fixed';
+    annons.style.top ='-170px';
+    annons2.style.top ='-170px';
 
 
     if (window.pageYOffset > viewportHeight) {
@@ -39,10 +45,10 @@ window.addEventListener('scroll', function() {
       // Ensure leftAd3 moves up smoothly
       rightAd2.classList.add('transition-effect');
       rightAd2.style.opacity = '1'; // New top position
-      rightAd2.style.top = '-680px'; // New top position
+      rightAd2.style.top = '-675px'; // New top position
 
       leftAd3.classList.add('transition-effect');
-      leftAd3.style.top = '-460px'; // New top position
+      leftAd3.style.top = '-455px'; // New top position
       leftAd3.style.opacity = '1'; // New top position
 
     } else {
@@ -70,6 +76,11 @@ window.addEventListener('scroll', function() {
     navbar.style.position = 'relative';
     navbar.style.top = '35px';
     rightAd2.style.opacity = '0';
+    annons.style.position = 'absolute'
+    annons2.style.position = 'absolute'
+  annons.style.top ='-43px';
+    annons2.style.top ='-43px';
+
 
     [leftAd, leftAd2, leftAd3, rightAd, rightAd2].forEach(ad => {
       ad.style.position = 'absolute';
@@ -77,7 +88,8 @@ window.addEventListener('scroll', function() {
       ad.style.opacity = '1'; // Reset opacity
       leftAd3.style.opacity = '0'; // Reset top position for leftAd3
       rightAd2.style.opacity = '0';
-
+      annons.style.position = 'absolute'
+      annons2.style.position = 'absolute'
       ad.classList.remove('transition-effect'); // Remove transition effect class
     });
   }
