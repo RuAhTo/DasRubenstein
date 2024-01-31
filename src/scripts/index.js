@@ -21,6 +21,10 @@ import {loadTomtenQuotes} from '../scripts/tomten';
 
 loadTomtenQuotes();
 
+import {loadKungenQuotes} from '../scripts/kungen';
+
+loadKungenQuotes();
+
  /* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
 
 /* async function fetchNews() {

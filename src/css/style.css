@@ -188,6 +188,7 @@ main{
 
 .kimSvar{
   width: 190px;;
+  background-color: aquamarine;
 }
 
 .kimsText{
@@ -252,8 +253,9 @@ main{
 
 .pharaoh{
   margin-top: 20px;
-  width: 190px;
+  width: 190px; 
   border: solid rgb(206, 206, 206);
+  border-width: thin;
 }
 
 .pharaohFavo{
@@ -298,6 +300,22 @@ main{
   margin-top: 20px;
 
 }
+
+.kungen{
+  margin-top: 20px;
+  width: 190px;
+}
+
+.kungenTips{
+  width: 190px;
+}
+
+.kungenText{
+  width: 190px;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+}
+
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
