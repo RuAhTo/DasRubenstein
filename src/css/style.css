@@ -181,6 +181,11 @@ main{
   border-width: thin;
   
 }
+
+button:hover {
+  cursor: pointer;
+}
+
 .kimsDating{
   height: 180px;
   width: 190px;
@@ -188,7 +193,7 @@ main{
 
 .kimSvar{
   width: 190px;;
-  background-color: aquamarine;
+  background-color: rgb(252, 144, 39);
 }
 
 .kimsText{

@@ -3,6 +3,7 @@ import mockData from "../mockData.json";
 
 document.getElementById('toppNyheter').addEventListener('click', function(event) {
     fetchTopNews();
+    fetchTopNewsReal();
 });
 
 document.getElementById('politik').addEventListener('click', function(event){
@@ -13,13 +14,13 @@ document.getElementById('datum').addEventListener('click', function(event){
     fetchDate();
 })
 
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('search').addEventListener('keyup', event => {
         if (event.key === 'Enter') {
             fetchSearch(event.target.value); // Directly pass the search term
         }
     });
-});
+}); */
 
 
 function fetchSearch(searchTerm) {
