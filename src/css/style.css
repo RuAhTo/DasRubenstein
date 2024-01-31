@@ -409,7 +409,7 @@ main{
   position: absolute;
   background-color: black;
   margin-left: 85rem;
-  margin-top: 385px;
+  margin-top: 285px;
   width: 400px;
   height: 500px;
   z-index: 99;
@@ -421,7 +421,7 @@ main{
   position: absolute;
   background-color: black;
   margin-left: 85rem;
-  margin-top: 1000px;
+  margin-top: 790px;
   width: 400px;
   height: 300px;
   z-index: 99;
@@ -459,9 +459,11 @@ main{
   height: 270px;
 
   z-index: 99;
-  background-image: url(/src/images/eduardo/spray3.png);
-  background-size: 100%;
+  background-image: url(/src/images/eduardo/edward.gif);
+  background-size: 120%;
   background-repeat: no-repeat;
+  background-position: -38px center; /* Offsets the background image 20px to the left */
+
 }
 
 .left-ad3 {
@@ -477,6 +479,47 @@ main{
   background-position: center; 
   opacity: 0;
 }
+
+.annons {
+  position: absolute;
+  display: block;
+  border: black 10px;
+  color: rgb(153, 153, 153);
+  width: 200px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+z-index: 990;
+margin-left: -1560px;
+margin-top: 270px;
+}
+
+.annons2 {
+  position: absolute;
+  display: block;
+  border: black 10px;
+  color: rgb(153, 153, 153);
+  width: 200px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+z-index: 990;
+margin-left: 1165px;
+margin-top: 270px;
+}
+/* 
+.annons p{
+  position: absolute;
+  display: block;
+  border: black 10px;
+  color: red;
+  width: 200px;
+  height: 40px;
+z-index: 990;
+margin-left: -1560px;
+margin-top: 260px;
+}
+ */
 
 /* 
 .left-ad-header {
