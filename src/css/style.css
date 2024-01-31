@@ -268,6 +268,10 @@ main{
   height: 120px;
 
 }
+.transition-effect {
+  transition: opacity 0.5s ease-in-out, top 0.8s ease-in-out;
+  opacity: 0; /* Start with elements hidden, adjust as needed */
+}
 
 .tomten{
   width: 190px;
@@ -405,7 +409,7 @@ main{
   position: absolute;
   background-color: black;
   margin-left: 85rem;
-  margin-top: 285px;
+  margin-top: 385px;
   width: 400px;
   height: 500px;
   z-index: 99;
@@ -417,13 +421,13 @@ main{
   position: absolute;
   background-color: black;
   margin-left: 85rem;
-  margin-top: 800px;
+  margin-top: 1000px;
   width: 400px;
   height: 300px;
   z-index: 99;
   background-image: url(/src/images/takbox.png);
   background-size: 100%;
-  
+  opacity: 0;
 }
 /* .left-ad {
   position: absolute;
@@ -445,6 +449,21 @@ main{
 
 }
 
+
+.left-ad2 {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 285px;
+    width: 400px;
+  height: 270px;
+
+  z-index: 99;
+  background-image: url(/src/images/eduardo/spray3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .left-ad3 {
   position: absolute;
   background-color: black;
@@ -456,6 +475,7 @@ main{
   background-image: url(/src/images/Yoggi.png);
   background-size: 110%;
   background-position: center; 
+  opacity: 0;
 }
 
 /* 
@@ -473,19 +493,6 @@ main{
 }
  */
 
-.left-ad2 {
-  position: absolute;
-  background-color: black;
-  margin-left: -85rem;
-  margin-top: 285px;
-    width: 400px;
-  height: 270px;
-
-  z-index: 99;
-  background-image: url(/src/images/eduardo/spray3.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
 
 #randomSaab{
   width: 190px;
