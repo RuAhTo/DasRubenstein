@@ -267,6 +267,33 @@ main{
 
 }
 
+.tomten{
+  width: 190px;
+  
+
+}
+
+.tomtenExtra1{
+  margin-top: 20px;
+  width: 190px;
+  height: 20px;
+}
+
+.tomtenExtra2{
+  width: 190px;
+  height: 20px;
+}
+
+.tomtenText{
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
+
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
