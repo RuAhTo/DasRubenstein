@@ -1,13 +1,13 @@
 import axios from "axios";
 import mockData from "../mockData.json";
-import { Client } from 'appwrite';
+/* import { Client } from 'appwrite';
 
 const client = new Client();
 
 client
     .setEndpoint('https://cloud.appwrite.io/v1')
     .setProject('65ba5076a990069110d4');
-
+ */
 
 //Kims dejtingskola
 

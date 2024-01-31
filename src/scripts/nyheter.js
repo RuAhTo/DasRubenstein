@@ -14,13 +14,13 @@ document.getElementById('datum').addEventListener('click', function(event){
     fetchDate();
 })
 
-/* document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('search').addEventListener('keyup', event => {
         if (event.key === 'Enter') {
             fetchSearch(event.target.value); // Directly pass the search term
         }
     });
-}); */
+});
 
 
 function fetchSearch(searchTerm) {

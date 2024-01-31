@@ -23,8 +23,8 @@ document.getElementById('datum').addEventListener('click', function(event){
 
 /* export async function fetchNewsReal(){ */
 async function fetchNewsReal() {
-    const apiKey = 'pub_3707400defd076981069b5b55870cb59c8cf2';
-    /* const apiKey = 'pub_37022a971a5dd4d83e968c09e01d9dbb47c0a'; */
+    /* const apiKey = 'pub_3707400defd076981069b5b55870cb59c8cf2'; */
+    const apiKey = 'pub_37022a971a5dd4d83e968c09e01d9dbb47c0a';
     /* const apiKey = 'pub_3745676b8bf54a1510608d38e14ff61ac979d'; */
     const url = `https://newsdata.io/api/1/news?apikey=${apiKey}`;
         try {
