@@ -8,6 +8,7 @@ import {loadKimQuotes} from '/src/scripts/kim.js';
 
 loadKimQuotes();
 
+
 import {loadOlleQuotes} from '../scripts/olle';
 
 loadOlleQuotes();
