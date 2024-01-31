@@ -71,21 +71,23 @@ fetchNews() */
 
 
 
-/* import{fetchNews} from '../scripts/nyheter';
-fetchNews(); */
+import{fetchNews} from '../scripts/nyheter';
+fetchNews();
 
 
 import {fetchNewsReal} from "../scripts/nyheterREAL";
 fetchNewsReal();
 
+/* import {fetchTopNewsReal} from "../scripts/nyheterREAL";
+fetchTopNewsReal(); */
+
+/* import {fetchSearchReal} from "../scripts/nyheterREAL";
+fetchSearchReal(); */
+
+/* import{fetchDateReal} from "../scripts/nyheterREAL";
+fetchDateReal();  */
 
 
-
-
-
-
-/* import { fetchSearch } from "../scripts/nyheter";
-fetchSearch(); */
 
 
 
