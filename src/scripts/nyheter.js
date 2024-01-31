@@ -13,37 +13,33 @@ document.getElementById('datum').addEventListener('click', function(event){
     fetchDate();
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('search').addEventListener('keyup', function(event) {
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('search').addEventListener('keyup', event => {
         if (event.key === 'Enter') {
-            const sökOrd = document.getElementById('search').value; // Capture the search term
-            fetchSearch(sökOrd); // Pass it to fetchSearch function
+            fetchSearch(event.target.value); // Directly pass the search term
         }
     });
 });
-function fetchSearch(sökOrd) {
-    console.log("Searching for:", sökOrd);
+
+
+function fetchSearch(searchTerm) {
+    console.log("Searching for:", searchTerm);
     const data = mockData.results; // Use your actual data source
-    const lowerCaseSearchTerm = sökOrd.toLowerCase();
+    const lowerCaseSearchTerm = searchTerm.toLowerCase();
     const newsDiv = document.getElementById('newsItem');
     newsDiv.innerHTML = data
-        .filter(article => {
-            const title = article.title.toLowerCase();
-            const description = article.description.toLowerCase();
-            // Ensure keywords is not null before calling map
-            const keywords = article.keywords ? article.keywords.map(keyword => keyword.toLowerCase()) : [];
-            return title.includes(lowerCaseSearchTerm) ||
-                   description.includes(lowerCaseSearchTerm) ||
-                   keywords.some(keyword => keyword.includes(lowerCaseSearchTerm));
+        .filter(({title, description, keywords}) => {
+            const titleLower = title?.toLowerCase() || '';
+            const descriptionLower = description?.toLowerCase() || '';
+            const keywordsLower = keywords?.map(keyword => keyword?.toLowerCase()) || [];
+            return [titleLower, descriptionLower, ...keywordsLower].some(text => text.includes(lowerCaseSearchTerm));
         })
-        .map(article => {
-            return `<img src='${article.image_url}'>
-                    <h1>${article.title}</h1>
-                    <p>${article.description}</p>`;
-        })
+        .map(({title, description, image_url}) => 
+            `<img src='${image_url}' style='max-width: 600px;'>
+             <h1>${title}</h1>
+             <p>${description}</p>`)
         .join("");
 }
-
 
 // Initial fetch to display some news
 export {fetchSearch}

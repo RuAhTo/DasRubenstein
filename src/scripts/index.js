@@ -59,6 +59,9 @@ fetchNews() */
 import{fetchNews} from '../scripts/nyheter';
 fetchNews();
 
+/* import { fetchSearch } from "../scripts/nyheter";
+fetchSearch(); */
+
 
 
 
@@ -95,20 +98,6 @@ fetchNews();
     finHund(); */
 
 
-
-
-/* function trump(){
-    const url = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
-    axios.get(url)
-        .then(response => {
-            const data = response.data;
-            const trumpGrej = document.getElementById('trump');
-            trumpGrej.textContent = data.message;
-        })
-}
-
-trump(); */
-
  /* async function fetchNews() {
     try{
    const response = await axios.get('https://api.thenewsapi.com/v1/news/all?api_token=bcrUaRq7nGakX8urZvUojmJWt3YpZeLULLHsxf01&search=usd');
@@ -133,43 +122,6 @@ catch (error){
 }
 
 fetchNews(); */
-
-
-
-
-
-/* const quotes = new Array();
-let numberOfQuotes = 0;
-let currentQuoteIndex = 0;
-
-function kimsDejting(quote) {
-    quotes[numberOfQuotes++] = quote;
-}
-
-function visaKim() {
-    if (numberOfQuotes > 0) {
-        const data = document.getElementById('kimsText');
-        data.innerHTML = quotes[currentQuoteIndex];
-        currentQuoteIndex = (currentQuoteIndex + 1) % numberOfQuotes; 
-    }
-}
-
-kimsDejting("Tre saker att tänka på: flörta, prata känslor och visa din personlighet. Var dig själv och undvik att ljuga. Detta gäller både bakom datorskärmen och när du och din träff möts ansikte mot ansikte. Det kommer inte löna sig att fara med osanning då lögner oftast kommer fram till slut. Skriver du något som inte stämmer i din presentation, eller i ett privat meddelande till din dejt, så kan detta avslöjas snabbt när ni väl ses.");
-
-kimsDejting("Gott uppförande är en grundregel. Att säga ”tack”, uppföra sig bra och att vara trevlig på en dejt kommer aldrig att gå ur stil. Det är väl inte för mycket begärt?");
-
-kimsDejting("Ignorera telefonen. Om du verkligen vill att den andra personen ska känna att du bryr dig; ignorera din telefon under hela dejten och visa uppmärksamhet för den du faktiskt är där för att träffa. Ett pågående samtal som avbryts av notifieringar bryter magin omedelbart. ICQ, MSN och Myspace finns faktiskt kvar även efter dejten.");
-
-kimsDejting("Kom ihåg detaljerna. Det är ofta de små sakerna som betyder mest för oss. Genom att minnas något enkelt såsom din dejts favoritchoklad, dejtens syskons namn eller favoritkaffe kommer att få dig att hamna på plus. Varför inte möta upp på dejt nummer två med den där latten på lättmjölk med en extra espresso-shot och caramel syrup som hen nämnde någon gång att hen bara ÄLSKAR?");
-
-kimsDejting("Som Tove Jansson så bra uttryckte det, ”det är ingen konst att vara modig om man inte är rädd” – Och mod är riktigt attraktivt! Därför kommer personen som får din uppvakning antagligen att bli smickrad och känna sig utvald. Det finns något genuint fint med en person som tar mod till sig trots att hon eller han är rädd och ändå frågar om ett telefonnummer eller bjuder ut på dejt.");
-
-kimsDejting("Killar älskar när tjejer dricker öl. Antar att det skapar en illusion av närhet vilket tyvärr är den enda sorts närhet vi med säkerhet kan anta att alla grabbar klarar av. ");
-
-
-visaKim();
-
-setInterval(visaKim, 20000); */
 
 
 var imagesArray = new Array(9);
