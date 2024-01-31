@@ -56,8 +56,26 @@ catch (error){
 
 fetchNews() */
 
-import{fetchNews} from '../scripts/nyheter';
-fetchNews();
+
+
+
+
+
+
+
+
+/* import{fetchNews} from '../scripts/nyheter';
+fetchNews(); */
+
+
+import {fetchNewsReal} from "../scripts/nyheterREAL";
+fetchNewsReal();
+
+
+
+
+
+
 
 /* import { fetchSearch } from "../scripts/nyheter";
 fetchSearch(); */
@@ -124,7 +142,7 @@ catch (error){
 fetchNews(); */
 
 
-var imagesArray = new Array(9);
+const imagesArray = new Array(9);
 imagesArray[0] = new Image();
 imagesArray[0].src = "/src/images/saab/saab1.png";
 imagesArray[1] = new Image();
@@ -160,7 +178,7 @@ function displaySaab() {
   setInterval(displaySaab, 1000);
   
 
-var imagesArray2 = new Array(5);
+const imagesArray2 = new Array(5);
 imagesArray2[0] = new Image();
 imagesArray2[0].src = "/src/images/pyramider/pyramid1.png";
 imagesArray2[1] = new Image();

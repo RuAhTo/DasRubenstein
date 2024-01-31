@@ -150,7 +150,7 @@ export {fetchTopNews}
 
 
 function fetchNews() {
-    console.log("Nu kom det in MOCKDATA!");
+    /* console.log("Nu kom det in MOCKDATA!"); */
     const data = mockData.results;
     const newsDiv = document.getElementById('newsItem');
     newsDiv.innerHTML = data.map(article => {
