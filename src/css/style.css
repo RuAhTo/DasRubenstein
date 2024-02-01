@@ -42,6 +42,7 @@ body {
   font-family: Chomsky;
   font-size: 4rem;
   font-weight: normal;
+  user-select: none;
 }
 
 header {
@@ -107,7 +108,7 @@ logo {
   gap: 2rem;
   width: 100%; /* Ensures navbar takes full width */
   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-
+  user-select: none;
 }
 
 .navbar ul {

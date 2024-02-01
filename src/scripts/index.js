@@ -1,6 +1,6 @@
 import axios from "axios";
-import mockData from "../mockData.json";
-/* import { Client } from 'appwrite';
+/* import mockData from "../mockData.json";
+ *//* import { Client } from 'appwrite';
 
 const client = new Client();
 
@@ -73,11 +73,11 @@ fetchNews() */
 
 import{fetchNews} from '../scripts/nyheter';
 fetchNews();
+    /* 
 
-
-import {fetchNewsReal} from "../scripts/nyheterREAL";
-fetchNewsReal();
-
+    import {fetchNewsReal} from "../scripts/nyheterREAL";
+    fetchNewsReal();
+ */
 /* import {fetchTopNewsReal} from "../scripts/nyheterREAL";
 fetchTopNewsReal(); */
 
