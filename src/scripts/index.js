@@ -1,6 +1,6 @@
 import axios from "axios";
 /* import mockData from "../mockData.json";
- *//* import { Client } from 'appwrite';
+ */ /* import { Client } from 'appwrite';
 
 const client = new Client();
 
@@ -11,28 +11,27 @@ client
 
 //Kims dejtingskola
 
-import {loadKimQuotes} from '/src/scripts/kim.js';
+import { loadKimQuotes } from "/src/scripts/kim.js";
 
 loadKimQuotes();
 
-
-import {loadOlleQuotes} from '../scripts/olle';
+import { loadOlleQuotes } from "../scripts/olle";
 
 loadOlleQuotes();
 
-import {loadDodenQuotes} from '../scripts/doden';
+import { loadDodenQuotes } from "../scripts/doden";
 
 loadDodenQuotes();
 
-import {loadTomtenQuotes} from '../scripts/tomten';
+import { loadTomtenQuotes } from "../scripts/tomten";
 
 loadTomtenQuotes();
 
-import {loadKungenQuotes} from '../scripts/kungen';
+import { loadKungenQuotes } from "../scripts/kungen";
 
 loadKungenQuotes();
 
- /* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
+/* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
 
 /* async function fetchNews() {
     try{
@@ -63,20 +62,11 @@ catch (error){
 
 fetchNews() */
 
-
-
-
-
-
-
-
-
-import{fetchNews} from '../scripts/nyheter';
+import { fetchNews } from "../scripts/nyheter";
 fetchNews();
 
-
-import {fetchNewsReal} from "../scripts/nyheterREAL";
-fetchNewsReal();
+// import {fetchNewsReal} from "../scripts/nyheterREAL";
+// fetchNewsReal();
 
 /* import {fetchTopNewsReal} from "../scripts/nyheterREAL";
 fetchTopNewsReal(); */
@@ -86,13 +76,6 @@ fetchSearchReal(); */
 
 /* import{fetchDateReal} from "../scripts/nyheterREAL";
 fetchDateReal();  */
-
-
-
-
-
-
-
 
 /* function fetchNews() {
     console.log("Nu kom det in MOCKDATA!");
@@ -108,8 +91,6 @@ fetchDateReal();  */
 fetchNews();
  */
 
-
-
 /* function finHund(){
     const url = 'https://dog.ceo/api/breeds/image/random';
     axios.get(url)
@@ -124,8 +105,7 @@ fetchNews();
 
     finHund(); */
 
-
- /* async function fetchNews() {
+/* async function fetchNews() {
     try{
    const response = await axios.get('https://api.thenewsapi.com/v1/news/all?api_token=bcrUaRq7nGakX8urZvUojmJWt3YpZeLULLHsxf01&search=usd');
    console.log("NU KOM DET IN MASSA NEWSSS" + response.data)
@@ -150,7 +130,6 @@ catch (error){
 
 fetchNews(); */
 
-
 const imagesArray = new Array(9);
 imagesArray[0] = new Image();
 imagesArray[0].src = "/src/images/saab/saab1.png";
@@ -173,19 +152,13 @@ imagesArray[8].src = "/src/images/saab/saab9.png";
 imagesArray[9] = new Image();
 imagesArray[9].src = "/src/images/saab/saab10.png";
 
-
-
-
-
 function displaySaab() {
-    let num = Math.floor(Math.random() * imagesArray.length);
-    const img = document.getElementById('randomSaab');
-    img.src = imagesArray[num].src;
+  let num = Math.floor(Math.random() * imagesArray.length);
+  const img = document.getElementById("randomSaab");
+  img.src = imagesArray[num].src;
+}
 
-  }
-
-  setInterval(displaySaab, 1000);
-  
+setInterval(displaySaab, 1000);
 
 const imagesArray2 = new Array(5);
 imagesArray2[0] = new Image();
@@ -201,12 +174,10 @@ imagesArray2[4].src = "/src/images/pyramider/pyramid5.png";
 imagesArray2[5] = new Image();
 imagesArray2[5].src = "/src/images/pyramider/pyramid6.png";
 
-
 function displayPyramid() {
-    let num = Math.floor(Math.random() * imagesArray2.length);
-    const img = document.getElementById('randomPyramid');
-    img.src = imagesArray2[num].src;
+  let num = Math.floor(Math.random() * imagesArray2.length);
+  const img = document.getElementById("randomPyramid");
+  img.src = imagesArray2[num].src;
+}
 
-  }
-
-  setInterval(displayPyramid, 800);
+setInterval(displayPyramid, 800);

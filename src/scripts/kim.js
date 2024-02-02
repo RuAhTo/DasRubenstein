@@ -1,9 +1,9 @@
 export async function loadKimQuotes() {
-  const kimText = document.querySelector('#kimsText');
+  const kimText = document.querySelector("#kimsText");
   let quotes = [];
 
   try {
-    const response = await fetch('src/scripts/kim.json');
+    const response = await fetch("./src/json/kim.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
     console.log(quotes);
@@ -19,5 +19,3 @@ export async function loadKimQuotes() {
 
   setInterval(showKim, 40000);
 }
-
-
