@@ -6,7 +6,6 @@ export async function loadDodenQuotes() {
     const response = await fetch("./src/json/doden.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
-    console.log(quotes);
     showDoden();
   } catch (error) {
     console.log(error);

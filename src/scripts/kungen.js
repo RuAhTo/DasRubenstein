@@ -6,7 +6,6 @@ export async function loadKungenQuotes() {
     const response = await fetch("./src/json/kungen.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
-    console.log(quotes);
     showKungen();
   } catch (error) {
     console.log(error);

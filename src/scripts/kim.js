@@ -6,7 +6,6 @@ export async function loadKimQuotes() {
     const response = await fetch("./src/json/kim.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
-    console.log(quotes);
     showKim();
   } catch (error) {
     console.log(error);

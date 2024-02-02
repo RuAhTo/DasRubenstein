@@ -6,7 +6,6 @@ export async function loadOlleQuotes() {
     const response = await fetch("./src/json/olle.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
-    console.log(quotes);
     showOlle();
   } catch (error) {
     console.log(error);

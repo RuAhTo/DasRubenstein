@@ -6,7 +6,6 @@ export async function loadTomtenQuotes() {
     const response = await fetch("./src/json/tomten.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
-    console.log(quotes);
     showTomten();
   } catch (error) {
     console.log(error);
