@@ -19,11 +19,11 @@ loadTomtenQuotes();
 import { loadKungenQuotes } from "../scripts/kungen";
 loadKungenQuotes();
 
-// import { fetchNews } from "../scripts/nyheter";
-// fetchNews();
+import { fetchNews } from "../scripts/nyheter";
+fetchNews();
 
 import { initRealNews } from "../scripts/nyheterREAL";
-initRealNews();
+// initRealNews();
 
 /* function finHund(){
     const url = 'https://dog.ceo/api/breeds/image/random';

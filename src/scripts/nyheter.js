@@ -1,6 +1,8 @@
 import axios from "axios";
 import mockData from "../json/mockData.json";
 
+const newsDiv = document.querySelector(".news-articles");
+
 document
   .getElementById("toppNyheter")
   .addEventListener("click", function (event) {
@@ -28,7 +30,6 @@ function fetchSearch(searchTerm) {
   console.log("Searching for:", searchTerm);
   const data = mockData.results; // Use your actual data source
   const lowerCaseSearchTerm = searchTerm.toLowerCase();
-  const newsDiv = document.getElementById("newsItem");
   newsDiv.innerHTML = data
     .filter(({ title, description, keywords }) => {
       const titleLower = title?.toLowerCase() || "";
@@ -54,7 +55,6 @@ export { fetchSearch };
 function fetchDate() {
   console.log("Nu kom det in MOCKDATA!");
   const data = mockData.results;
-  const newsDiv = document.getElementById("newsItem");
   newsDiv.innerHTML = data
     .sort((a, b) => {
       const dateA = new Date(a.pubDate);
@@ -83,7 +83,6 @@ export { fetchDate };
 function fetchPoliticNews() {
   console.log("Nu kom det in MOCKDATA!");
   const data = mockData.results;
-  const newsDiv = document.getElementById("newsItem");
   newsDiv.innerHTML = data
     .filter((article) => {
       // Filter articles based on a condition.
@@ -112,7 +111,6 @@ export { fetchPoliticNews };
 function fetchTopNews() {
   console.log("Nu kom det in MOCKDATA!");
   const data = mockData.results;
-  const newsDiv = document.getElementById("newsItem");
   newsDiv.innerHTML = data
     .filter((article) => {
       // Filter articles based on a condition.
@@ -141,7 +139,6 @@ export { fetchTopNews };
 function fetchNews() {
   /* console.log("Nu kom det in MOCKDATA!"); */
   const data = mockData.results;
-  const newsDiv = document.getElementById("newsItem");
   newsDiv.innerHTML = data
     .map((article) => {
       return `<img src='${article.image_url}' style='max-width: 600px;'>
