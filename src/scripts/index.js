@@ -22,17 +22,8 @@ loadKungenQuotes();
 // import { fetchNews } from "../scripts/nyheter";
 // fetchNews();
 
-import { fetchNewsReal } from "../scripts/nyheterREAL";
-fetchNewsReal();
-
-/* import {fetchTopNewsReal} from "../scripts/nyheterREAL";
-fetchTopNewsReal(); */
-
-/* import {fetchSearchReal} from "../scripts/nyheterREAL";
-fetchSearchReal(); */
-
-/* import{fetchDateReal} from "../scripts/nyheterREAL";
-fetchDateReal();  */
+import { initRealNews } from "../scripts/nyheterREAL";
+initRealNews();
 
 /* function finHund(){
     const url = 'https://dog.ceo/api/breeds/image/random';
