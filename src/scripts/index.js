@@ -19,11 +19,11 @@ loadTomtenQuotes();
 import { loadKungenQuotes } from "../scripts/kungen";
 loadKungenQuotes();
 
-import { fetchNews } from "../scripts/nyheter";
-fetchNews();
+// import { fetchNews } from "../scripts/nyheter";
+// fetchNews();
 
-// import {fetchNewsReal} from "../scripts/nyheterREAL";
-// fetchNewsReal();
+import { fetchNewsReal } from "../scripts/nyheterREAL";
+fetchNewsReal();
 
 /* import {fetchTopNewsReal} from "../scripts/nyheterREAL";
 fetchTopNewsReal(); */
