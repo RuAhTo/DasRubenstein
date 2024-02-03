@@ -19,11 +19,43 @@ loadTomtenQuotes();
 import { loadKungenQuotes } from "../scripts/kungen";
 loadKungenQuotes();
 
-import { fetchNews } from "../scripts/nyheter";
-fetchNews();
+import { fetchRealNews } from "./realNews";
+import { fetchFakeNews } from "./fakeNews";
+import { displayNews } from "./news";
 
-import { initRealNews } from "../scripts/nyheterREAL";
-// initRealNews();
+const fakeArticles = await fetchFakeNews();
+
+document.getElementById("datum").addEventListener("click", async () => {
+  displayNews(await fetchRealNews(""), fakeArticles);
+});
+
+document.getElementById("toppNyheter").addEventListener("click", async () => {
+  displayNews(await fetchRealNews("&category=top"), fakeArticles);
+});
+
+document.getElementById("politik").addEventListener("click", async () => {
+  displayNews(
+    await fetchRealNews("&category=politics"),
+    fakeArticles.filter((article) => article.category.includes("politics"))
+  );
+});
+
+document.getElementById("search").addEventListener("keyup", async (event) => {
+  if (event.key === "Enter") {
+    const query = event.target.value;
+    // displayNews(await fetchRealNews(`&q=${query}`), fakeArticles); //Seems to be far fetched that we have fake article that fits criteria, so might want to not filter
+    displayNews(
+      await fetchRealNews(`&q=${query}`),
+      fakeArticles.filter(
+        (article) =>
+          article.title?.includes(`${query}`) ||
+          article.description?.includes(`${query}`)
+      )
+    );
+  }
+});
+
+displayNews(await fetchRealNews(""), fakeArticles);
 
 /* function finHund(){
     const url = 'https://dog.ceo/api/breeds/image/random';
