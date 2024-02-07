@@ -15,13 +15,15 @@
 
 body,
 html {
-  margin: 0;
+  margin-top: -40px;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
   font-size: 16px;
 }
-
+h1 {
+  font-weight: 600;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -34,13 +36,15 @@ body {
   max-width: 100%; /* Ensures the image is responsive and fits within the header */
   height: auto; /* Maintains the aspect ratio of the image */
   display: block; /* Makes the image a block-level element */
-  margin: 0 auto; /* Centers the image horizontally */
+  margin: auto auto; /* Centers the image horizontally */
+  margin-top: -20px;
 }
 
 .logo h1 {
   font-family: Chomsky;
   font-size: 4rem;
   font-weight: normal;
+  user-select: none;
 }
 
 header {
@@ -77,6 +81,10 @@ header::before {
   bottom: -6px; /* Position the second line with some space below the first line */
 }
 
+button {
+  cursor: pointer;
+}
+
 logo {
   max-width: 100%; /* Ensures the image is responsive and fits within the header */
   height: auto; /* Maintains the aspect ratio of the image */
@@ -100,10 +108,13 @@ logo {
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
   height: 3rem;
-  margin-top: auto; /* Pushes the navbar to the bottom */
+  margin-top: -60px; /* Pushes the navbar to the bottom */
   background-color: #ffffff; /* Dark background */
   overflow: hidden;
   gap: 2rem;
+  width: 100%; /* Ensures navbar takes full width */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  user-select: none;
 }
 
 .navbar ul {
@@ -131,6 +142,10 @@ logo {
   color: black; /* Text color on hover */
 }
 
+.hide-after::after {
+  content: none; /* or 'display: none;' */
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -143,80 +158,241 @@ logo {
   display: flex;
   flex-direction: row-reverse;
   max-width: 1200px;
-  
-  
-  height: 100vh;
+  height: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 54px;
   transform: 50%;
-  border: solid;
+  border: none;
 }
 
 aside {
   padding: 15px;
-  width: 220px;
+  width: 200px;
   background: #ffffff;
   height: 100%;
 }
 
-main{
-  margin-top: 3px;
-  padding: 15px;
-  border: solid;
+main {
+  margin-top: 0px;
+  padding: 10px;
+  height: 100%;
+  border: solid rgb(211, 211, 211);
+  border-top: none;
+  border-left: none;
   border-width: thin;
-  
-}
-.kimsDating{
-  height: 200px;
-  width: 200px;
 }
 
-.kimsText{
-  width: 200px;
-  height: 350px;
-  border: solid;
+/*News article vvv*/
+.news-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 40rem;
+}
+
+.news-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-article-image,
+.news-article-video {
+  max-width: 100%;
+}
+
+.news-article-title {
+  padding-top: 0.25rem;
+}
+
+.news-article-description {
+  padding-top: 0.75rem;
+}
+
+.news-article-source-date-wrapper {
+  display: flex;
+  padding-top: 0.75rem;
+  align-self: flex-end;
+}
+
+.news-article-source,
+.news-article-date {
+  align-self: flex-end;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  background-color: rgb(209, 209, 209);
+}
+/*News article ^^^*/
+
+.kimsDating {
+  height: 180px;
+  width: 190px;
+}
+
+.kimSvar {
+  width: 190px;
+  background-color: rgb(252, 144, 39);
+}
+
+.kimsText {
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
+.olle {
+  margin-top: 20px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+}
+
+.olleSvar {
+  width: 190px;
+  height: 60px;
+
+  margin-right: 10px;
+}
+
+.ollesText {
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
+.doden {
+  margin-top: 20px;
+  width: 190px;
+  height: auto;
+}
+
+.dodenSvar {
+  width: 190px;
+  height: 60px;
+
+  margin-right: 10px;
+}
+
+.dodenText {
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
+.pharaoh {
+  margin-top: 20px;
+  width: 190px;
+  border: solid rgb(206, 206, 206);
   border-width: thin;
 }
+
+.pharaohFavo {
+  width: 190px;
+}
+
+#randomPyramid {
+  width: 190px;
+  height: 120px;
+}
+.transition-effect {
+  transition: opacity 0.5s ease-in-out, top 0.8s ease-in-out;
+  opacity: 0; /* Start with elements hidden, adjust as needed */
+}
+
+.tomten {
+  width: 190px;
+}
+
+.tomtenExtra1 {
+  margin-top: 20px;
+  width: 190px;
+  height: 20px;
+}
+
+.tomtenExtra2 {
+  width: 190px;
+  height: 20px;
+}
+
+.tomtenText {
+  margin-left: 0px;
+  width: 190px;
+  height: auto;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+  padding: 7px;
+}
+
+.olen {
+  width: 190px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 5px #c2fffb, 0 0 20px 7px #ebecca, 0 0 25px 20px #f002f0,
+    0 0 30px 25px #ff149d;
+}
+
+.kungen {
+  margin-top: 20px;
+  width: 190px;
+}
+
+.kungenTips {
+  width: 190px;
+}
+
+.kungenText {
+  width: 190px;
+  border: solid rgb(206, 206, 206);
+  border-width: thin;
+}
+
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
-.news-item {
-  /* margin: 3rem auto; */
-/*   margin-top:100px;
-  margin-left: 30%; */
-  width: 40rem;
-
+.news.item img {
+  width: 30px;
 }
 
-.news{
+.news {
   height: 200px;
   width: 50px;
 }
 
-.extra{
+.extra {
   width: 300px;
   height: 30px;
 }
 
-.hund{
+.hund {
   width: 300px;
   height: 300px;
 }
 
-.trump{
+.trump {
   width: 100px;
   height: 300px;
 }
 
-.trumpPic{
+.trumpPic {
   width: 300px;
   height: 300px;
 }
 
-.trumpContainer{
+.trumpContainer {
   width: 300px;
 }
 
@@ -237,7 +413,7 @@ main{
   height: 35px;
   background-color: rgba(0, 0, 0, 0.9);
   box-sizing: content-box;
-  width: 2000px;
+  width: 1900px;
 }
 
 .ticker {
@@ -261,9 +437,218 @@ main{
 
 /* TICKER-----------------------------------------------------------------------------------------------------------------------------------------TICKER */
 
+.right-ad {
+  position: absolute;
+  background-color: black;
+  margin-left: 85rem;
+  margin-top: 285px;
+  width: 400px;
+  height: 500px;
+  z-index: 99;
+  background-image: url(/src/images/slobodan-reklam.png);
+  background-size: 100%;
+}
+
+.right-ad2 {
+  position: absolute;
+  background-color: black;
+  margin-left: 85rem;
+  margin-top: 790px;
+  width: 400px;
+  height: 300px;
+  z-index: 99;
+  background-image: url(/src/images/takbox.png);
+  background-size: 100%;
+  opacity: 0;
+}
+/* .left-ad {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 570px;
+  width: 400px;
+  height: 330px;
+  z-index: 99;
+  background-image: url(/src/images/takbox.png);
+  background-size: 110%;
+  background-position: center; 
+} */
+
+.left-ad img.stretch {
+  object-fit: fill;
+  width: auto;
+  height: 350px;
+}
+
+.left-ad2 {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 285px;
+  width: 400px;
+  height: 270px;
+
+  z-index: 99;
+  background-image: url(/src/images/eduardo/edward.gif);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: -38px center; /* Offsets the background image 20px to the left */
+}
+
+.left-ad3 {
+  position: absolute;
+  background-color: black;
+  margin-left: -85rem;
+  margin-top: 570px;
+  width: 400px;
+  height: 880px;
+  z-index: 99;
+  background-image: url(/src/images/Yoggi.png);
+  background-size: 110%;
+  background-position: center;
+  opacity: 0;
+}
+
+.annons {
+  position: absolute;
+  display: block;
+  border: black 10px;
+  color: rgb(153, 153, 153);
+  width: 200px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 990;
+  margin-left: -1560px;
+  margin-top: 270px;
+}
+
+.annons2 {
+  position: absolute;
+  display: block;
+  border: black 10px;
+  color: rgb(153, 153, 153);
+  width: 200px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 990;
+  margin-left: 1165px;
+  margin-top: 270px;
+}
+/* 
+.annons p{
+  position: absolute;
+  display: block;
+  border: black 10px;
+  color: red;
+  width: 200px;
+  height: 40px;
+z-index: 990;
+margin-left: -1560px;
+margin-top: 260px;
+}
+ */
+
+/* 
+.left-ad-header {
+  position: absolute;
+  width: 400px;
+  height: 370px;
+  z-index: 100;
+  margin-top: 135px;
+  margin-left: 5px;
+  background-image: url(/src/images/RUBENSTEIN.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+ */
+/* LOGIN------------------------------------------------------------LOGIN */
+
+/* Container for the login modal */
+.login {
+  margin-top: -300px;
+  margin-left: -600px;
+}
+
+#loginModal {
+  position: fixed;
+  z-index: 9999; /* Make sure it's on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The actual login box */
+.login-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 90%; /* Ensure it doesn't overflow on small screens */
+}
+
+/* Styles for the form and its elements */
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginForm input {
+  padding: 5px;
+  margin-bottom: 1px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#loginForm button {
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loginForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Google login button styles */
+#loginWithGoogle {
+  background-color: #db4437; /* Google's brand color */
+  color: #fff;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#loginWithGoogle:hover {
+  background-color: #c1351d;
+}
+
+/* Login status message style */
+#loginStatus {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* LOGIN------------------------------------------------------------LOGIN */
+
 #randomSaab {
-  max-width: 200px;
-  max-height: 200px;
+  width: 190px;
+  /* max-height: 300px; */
+  height: 120px;
   margin-top: 20px;
 }
 

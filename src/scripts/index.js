@@ -1,160 +1,105 @@
-// import axios from "axios";
-// import mockData from "../mockData.json";
+// import { Client } from 'appwrite';
+// const client = new Client();
+// client
+//     .setEndpoint('https://cloud.appwrite.io/v1')
+//     .setProject('65ba5076a990069110d4');
 
-
-//Kims dejtingskola
-import {loadKimQuotes} from '/src/scripts/kim.js';
-
+import { loadKimQuotes } from "/src/scripts/kim.js";
 loadKimQuotes();
 
+import { loadOlleQuotes } from "../scripts/olle";
+loadOlleQuotes();
 
- /* const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_3707400defd076981069b5b55870cb59c8cf2'); */
+import { loadDodenQuotes } from "../scripts/doden";
+loadDodenQuotes();
 
-/* async function fetchNews() {
-    try{
-    
-    const response = await axios.get('mockData');
-    console.log(response.data);
-    
-    const data = response.data.results;
-    const newsDiv = document.getElementById('newsItem');
-    
-    if (Array.isArray(data)) {
-        newsDiv.innerHTML = data.map(article => {
-            return `<img src='${article.image_url}'>
-                    <h1>${article.title}</h1>s
-                    <p>${article.description}</p>`;
-        }).join(""); 
-    } else {
-        newsDiv.innerHTML = "<p>No news data available</p>";
-    }
+import { loadTomtenQuotes } from "../scripts/tomten";
+loadTomtenQuotes();
 
-    console.log(response.data)
-    
-}
-catch (error){
-        console.error('Could not fetch news from api', error)
-    }
-}
+import { loadKungenQuotes } from "../scripts/kungen";
+loadKungenQuotes();
 
-fetchNews() */
+import { fetchRealNews } from "./realNews";
+import { fetchFakeNews } from "./fakeNews";
+import { displayNews } from "./news";
 
-function fetchNews() {
-    console.log("Nu kom det in MOCKDATA!");
+const fakeArticles = await fetchFakeNews();
 
-    const data = mockData.results;
-    const newsDiv = document.getElementById('newsItem');
-    newsDiv.innerHTML = data.map(article => {
-        return `<img src='${article.image_url}'>
-                <h1>${article.title}</h1>
-                <p>${article.description}</p>`;
-    }).join("");
-}
+document.getElementById("datum").addEventListener("click", async () => {
+  displayNews(await fetchRealNews(""), fakeArticles);
+});
 
-fetchNews();
+document.getElementById("toppNyheter").addEventListener("click", async () => {
+  displayNews(await fetchRealNews("&category=top"), fakeArticles);
+});
 
-/* 
-function newsTest(){
-    const url = `https://api.worldnewsapi.com/search-news?text=saab/source-countries=sv/&language=en&api-key=d7d656cae7b2484682b91942b7092e48`;
+document.getElementById("politik").addEventListener("click", async () => {
+  displayNews(
+    await fetchRealNews("&category=politics"),
+    fakeArticles.filter((article) => article.category.includes("politics"))
+  );
+});
 
-    axios.get(url)
-        .then(response => {
-            const data = response.data;
-            console.log("hämtningen lyckades! :" + response)
-            const newsGrej = document.getElementById('news');
-            newsGrej.textContent = data + "HÄR KOMMER DET SNART NYHETER";
-        })
-        .catch(error =>
-            console.log("DET BLEV FEEEELL!!!", error))
-};
+document.getElementById("search").addEventListener("keyup", async (event) => {
+  if (event.key === "Enter") {
+    const query = event.target.value;
+    // displayNews(await fetchRealNews(`&q=${query}`), fakeArticles); //Seems to be far fetched that we have fake article that fits criteria, so might want to not filter
+    displayNews(
+      await fetchRealNews(`&q=${query}`),
+      fakeArticles.filter(
+        (article) =>
+          article.title?.includes(`${query}`) ||
+          article.description?.includes(`${query}`)
+      )
+    );
+  }
+});
 
-newsTest();
+displayNews(await fetchRealNews(""), fakeArticles);
 
-function finHund(){
+/* function finHund(){
     const url = 'https://dog.ceo/api/breeds/image/random';
     axios.get(url)
         .then(response => {
             const data = response.data;
             const hundGrej = document.getElementById('hund');
             hundGrej.src = data.message;
-
-
         })
     };
 
-    finHund();
+finHund(); */
 
+const saabArray = [
+  "./src/images/saab/saab1.png",
+  "./src/images/saab/saab2.png",
+  "./src/images/saab/saab3.png",
+  "./src/images/saab/saab4.png",
+  "./src/images/saab/saab5.png",
+  "./src/images/saab/saab6.png",
+  "./src/images/saab/saab7.png",
+  "./src/images/saab/saab8.png",
+  "./src/images/saab/saab9.png",
+  "./src/images/saab/saab10.png",
+];
 
-
-
-function trump(){
-    const url = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
-    axios.get(url)
-        .then(response => {
-            const data = response.data;
-            const trumpGrej = document.getElementById('trump');
-            trumpGrej.textContent = data.message;
-        })
-}
-
-trump(); */
-
-/*  async function fetchNews() {
-    try{
-   const response = await axios.get('https://api.thenewsapi.com/v1/news/all?api_token=bcrUaRq7nGakX8urZvUojmJWt3YpZeLULLHsxf01&search=usd');
-   console.log(response.data)
-    
-    const data = response.data.data;
-    const newsDiv = document.getElementById('newsItem');
-    
-
- newsDiv.innerHTML = `${data.map((article) => {
-   return   `<img src='${article.image_url}'>
-    <h1>${article.title}</h1>
-    <p>${article.description}</p> `;
-})}`.join(""); ;
-    
-    console.log(response.data)
-    
-}
-catch (error){
-        console.error('Could not fetch news from api', error)
-    }
-}
- */
-
-
-var imagesArray = new Array(9);
-imagesArray[0] = new Image();
-imagesArray[0].src = "/src/images/saab/saab1.png";
-imagesArray[1] = new Image();
-imagesArray[1].src = "/src/images/saab/saab2.png";
-imagesArray[2] = new Image();
-imagesArray[2].src = "/src/images/saab/saab3.png";
-imagesArray[3] = new Image();
-imagesArray[3].src = "/src/images/saab/saab4.png";
-imagesArray[4] = new Image();
-imagesArray[4].src = "/src/images/saab/saab5.png";
-imagesArray[5] = new Image();
-imagesArray[5].src = "/src/images/saab/saab6.png";
-imagesArray[6] = new Image();
-imagesArray[6].src = "/src/images/saab/saab7.png";
-imagesArray[7] = new Image();
-imagesArray[7].src = "/src/images/saab/saab8.png";
-imagesArray[8] = new Image();
-imagesArray[8].src = "/src/images/saab/saab9.png";
-imagesArray[9] = new Image();
-imagesArray[9].src = "/src/images/saab/saab10.png";
-
-
-
-
-
+const saabImage = document.getElementById("randomSaab");
 function displaySaab() {
-    let num = Math.floor(Math.random() * imagesArray.length);
-    const img = document.getElementById('randomSaab');
-    img.src = imagesArray[num].src;
+  saabImage.src = saabArray[Math.floor(Math.random() * saabArray.length)];
+}
+setInterval(displaySaab, 1000);
 
-  }
+const pyramidArray = [
+  "./src/images/pyramider/pyramid1.png",
+  "./src/images/pyramider/pyramid2.png",
+  "./src/images/pyramider/pyramid3.png",
+  "./src/images/pyramider/pyramid4.png",
+  "./src/images/pyramider/pyramid5.png",
+  "./src/images/pyramider/pyramid6.png",
+];
 
-  setInterval(displaySaab, 2000);
+const pyramidImage = document.getElementById("randomPyramid");
+function displayPyramid() {
+  pyramidImage.src =
+    pyramidArray[Math.floor(Math.random() * pyramidArray.length)];
+}
+setInterval(displayPyramid, 800);

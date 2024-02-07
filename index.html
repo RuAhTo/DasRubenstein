@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Das Rubenstein news site" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
     <link rel="icon" type="image/svg+xml" href="/src/images/eagle.png" />
-    
     <title>Rubenstein Times</title>
   </head>
   <body>
@@ -17,11 +17,10 @@
         </div>
         <div class="header-streck"></div>
         <div class="navbar">
-          <li><a href="#Toppnyheter">Toppnyheter </a></li>
-          <li><a href="#Senaste nytt">Senaste nytt</a></li>
-          <li><a href="#Bevakningar">Bevakningar</a></li>
-          
-
+          <li><button id="datum">Senaste nytt</button></li>
+          <li><button id="toppNyheter">Toppnyheter</button></li>
+          <li><button id="politik">Politik</button></li>
+          <input type="text" id="search" placeholder="Sök" size="4">
         </div>
         <div class="ticker-wrap">
           <div class="ticker">
@@ -47,30 +46,45 @@
             <div class="ticker__item">Researchers No Closer To Understanding What The Fuck You’re Talking About </div>
             <div class="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>
           </div>
-
       </header>
-     
-             
-      
-    
         <div class="container">
           <aside>
-            <img class="kimsDating" src="/src/images/kims_dejting.png" alt="">
+            <img class="kimsDating" src="/src/images/kims_dejting2.png" alt="Kim laddas...">
+            <img class="kimSvar" src="/src/images/kimsText.png" alt="Kim laddas...">
             <span class="kimsText" id="kimsText"></span>
 
             <img id="randomSaab" src="" alt="Saab 900 laddas...">
-          </aside> 
-          <main> 
-          <div class="news-item" id="newsItem"></div>
-          </div>
-        </main>
 
-        
+            <img class="olle" src="/src/images/Olle.png" alt="Olle laddas...">
+            <img class="olleSvar" src="/src/images/ollesvar.png" alt="Olle laddas...">
+            <span class="ollesText" id="ollesText" ></span>
+
+            <img class="doden" src="/src/images/doden.png" alt="Döden laddas...">
+            <img class="dodenSvar" src="/src/images/dodenInfo.png" alt="Olle laddas...">
+            <span class="dodenText" id="dodenText" ></span>
+
+
+            <img class="pharaoh" src="/src/images/pharao.png" alt="laddas...">
+            <img class="pharaohFavo" src="/src/images/Pharaohs-Favoriter.png" alt="laddas...">
+            <img id="randomPyramid" src="" alt="Pyramid laddas...">
+
+            <img class="tomtenExtra1" src="/src/images/extra.png" alt="laddas...">
+            <img class="tomten" src="/src/images/tomten.png" alt="laddas...">
+            <img class="tomtenExtra2" src="/src/images/extra.png" alt="laddas...">
+            <span class="tomtenText" id="tomtenText" ></span>
+
+            <img class="olen" src="/src/images/olen.png" alt="laddas...">
+
+            <img class="kungen" src="/src/images/kungen.png" alt="laddas...">
+            <img class="kungenTips" src="/src/images/kungensTips.png" alt="laddas...">
+            <span class="kungenText" id="kungenText" ></span>
+          </aside> 
+          <main class="news-articles"></main>
+        </div>
+      </div>
           <!-- 
           <iframe src="https://texttv.nu/" width="400" height="400"></iframe>
-
           <iframe src="https://swebbtv.se/w/3JerhGt6ZoCUCUpF7ioQpW" width="400" height="400"></iframe> 
-
 
           <div class="trumpContainer">
           <img src="/src/images/trump.png" class="trumpPic" alt="">
@@ -86,12 +100,55 @@
         <img class="hund" id="hund">  
           </div>  -->
          
+        <!-- 
+        <div class="login">
+          <form id="loginForm">
+          <input type="email" id="email" placeholder="Email">
+          <input type="password" id="password" placeholder="Password">
+          <button type="submit">Login</button>
+      </form>
+      <button id="loginWithGoogle">Login with Google</button>
+      <div id="loginStatus"></div>
+      
+      <script type="module">
+        import { loginUser, loginWithGoogle } from './auth.js';
+      
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+          try {
+            const response = await loginUser(email, password);
+            console.log('Login successful', response);
+            document.getElementById('loginStatus').innerText = 'Successfully logged in!';
+          } catch (error) {
+            console.error('Login failed', error);
+            document.getElementById('loginStatus').innerText = 'Login failed. Please try again.';
+          }
+        });
+      
+        document.getElementById('loginWithGoogle').addEventListener('click', loginWithGoogle);
+      </script>
+      
+        </div> -->
+        
+        <div class="annons"><p>ANNONS</p></div>
+        <div class="annons2"><p>ANNONS</p></div>
+
+        <div class="right-ad"></div>
+        <div class="right-ad2"></div>
+        <div class="left-ad">
+        <div class="left-ad-header"> </div>
         </div>
+        <div class="left-ad2"> </div>
+        <div class="left-ad3"> </div>
         <footer>  
         </footer>
-      
     </div>
+
   <script type="module" src="/src/scripts/index.js"></script>
+  <script type="module" src="/src/scripts/ads.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/appwrite"></script>
  <!-- <script language="JavaScript" type="text/javascript">document.write(quotes[Math.round(Math.random()*(quotes.length-1))]);</script>  -->
   </body>
 </html>
