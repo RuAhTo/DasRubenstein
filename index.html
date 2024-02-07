@@ -4,151 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Das Rubenstein news site" />
-    <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/ads.css" />
     <link rel="icon" type="image/svg+xml" href="/src/images/eagle.png" />
     <title>Rubenstein Times</title>
   </head>
-  <body>
-    <div class="grid-container">
-      <header>
-        <div class="logo">
-          <h1>Rubenstein Times</h1>
-        </div>
-        <div class="header-streck"></div>
-        <div class="navbar">
-          <li><button id="datum">Senaste nytt</button></li>
-          <li><button id="toppNyheter">Toppnyheter</button></li>
-          <li><button id="politik">Politik</button></li>
-          <input type="text" id="search" placeholder="Sök" size="4">
-        </div>
-        <div class="ticker-wrap">
-          <div class="ticker">
-            <div class="ticker__item">Entire Facebook Staff Laughs As Man Tightens Privacy Settings</div>
-            <div class="ticker__item">Despondent Jeff Bezos Realizes He’ll Have To Work For 9 Seconds To Earn Back Money He Lost In Divorce</div>
-            <div class="ticker__item">Pokémon Go player stabbed, keeps playing</div>
-            <div class="ticker__item">Idiot Zoo Animal With Zero Predators Still Protective Of Young </div>
-            <div class="ticker__item">Man Tries to Rob a Bank After Paying $500 to a Wizard to Make Him Invisible</div>
-            <div class="ticker__item">Third-Grader Clearly Biting Off More Than He Can Chew At Elementary School Book Fair</div>
-            <div class="ticker__item">Cyclists Bike Stolen at Police Station while Reporting iPhone Theft</div>
-            <div class="ticker__item">Ebola Nurse: Stop calling me the 'Ebola Nurse'.</div>
-            <div class="ticker__item">Researchers No Closer To Understanding What The Fuck You’re Talking About </div>
-            <div class="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>
-            <!-- DUPLICERAR FÖR ATT BÖRJA OM SMOOOOOOTH!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <div class="ticker__item">Entire Facebook Staff Laughs As Man Tightens Privacy Settings</div>
-            <div class="ticker__item">Despondent Jeff Bezos Realizes He’ll Have To Work For 9 Seconds To Earn Back Money He Lost In Divorce</div>
-            <div class="ticker__item">Pokémon Go player stabbed, keeps playing</div>
-            <div class="ticker__item">Idiot Zoo Animal With Zero Predators Still Protective Of Young </div>
-            <div class="ticker__item">Man Tries to Rob a Bank After Paying $500 to a Wizard to Make Him Invisible</div>
-            <div class="ticker__item">Third-Grader Clearly Biting Off More Than He Can Chew At Elementary School Book Fair</div>
-            <div class="ticker__item">Cyclists Bike Stolen at Police Station while Reporting iPhone Theft</div>
-            <div class="ticker__item">Ebola Nurse: Stop calling me the 'Ebola Nurse'.</div>
-            <div class="ticker__item">Researchers No Closer To Understanding What The Fuck You’re Talking About </div>
-            <div class="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>
-          </div>
-      </header>
-        <div class="container">
-          <aside>
-            <img class="kimsDating" src="/src/images/kims_dejting2.png" alt="Kim laddas...">
-            <img class="kimSvar" src="/src/images/kimsText.png" alt="Kim laddas...">
-            <span class="kimsText" id="kimsText"></span>
-
-            <img id="randomSaab" src="" alt="Saab 900 laddas...">
-
-            <img class="olle" src="/src/images/Olle.png" alt="Olle laddas...">
-            <img class="olleSvar" src="/src/images/ollesvar.png" alt="Olle laddas...">
-            <span class="ollesText" id="ollesText" ></span>
-
-            <img class="doden" src="/src/images/doden.png" alt="Döden laddas...">
-            <img class="dodenSvar" src="/src/images/dodenInfo.png" alt="Olle laddas...">
-            <span class="dodenText" id="dodenText" ></span>
-
-
-            <img class="pharaoh" src="/src/images/pharao.png" alt="laddas...">
-            <img class="pharaohFavo" src="/src/images/Pharaohs-Favoriter.png" alt="laddas...">
-            <img id="randomPyramid" src="" alt="Pyramid laddas...">
-
-            <img class="tomtenExtra1" src="/src/images/extra.png" alt="laddas...">
-            <img class="tomten" src="/src/images/tomten.png" alt="laddas...">
-            <img class="tomtenExtra2" src="/src/images/extra.png" alt="laddas...">
-            <span class="tomtenText" id="tomtenText" ></span>
-
-            <img class="olen" src="/src/images/olen.png" alt="laddas...">
-
-            <img class="kungen" src="/src/images/kungen.png" alt="laddas...">
-            <img class="kungenTips" src="/src/images/kungensTips.png" alt="laddas...">
-            <span class="kungenText" id="kungenText" ></span>
-          </aside> 
-          <main class="news-articles"></main>
-        </div>
-      </div>
-          <!-- 
-          <iframe src="https://texttv.nu/" width="400" height="400"></iframe>
-          <iframe src="https://swebbtv.se/w/3JerhGt6ZoCUCUpF7ioQpW" width="400" height="400"></iframe> 
-
-          <div class="trumpContainer">
-          <img src="/src/images/trump.png" class="trumpPic" alt="">
-        <span id="trump" cols="30" rows="10">
-        </div>
-
-        </span>
-        <span class="news" id="news" cols="30" rows="10">
-           
-        </span>
-        </div>
-        <img src="/src/images/extra.png" class="extra" alt="">
-        <img class="hund" id="hund">  
-          </div>  -->
-         
-        <!-- 
-        <div class="login">
-          <form id="loginForm">
-          <input type="email" id="email" placeholder="Email">
-          <input type="password" id="password" placeholder="Password">
-          <button type="submit">Login</button>
-      </form>
-      <button id="loginWithGoogle">Login with Google</button>
-      <div id="loginStatus"></div>
-      
-      <script type="module">
-        import { loginUser, loginWithGoogle } from './auth.js';
-      
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
-          e.preventDefault();
-          const email = document.getElementById('email').value;
-          const password = document.getElementById('password').value;
-          try {
-            const response = await loginUser(email, password);
-            console.log('Login successful', response);
-            document.getElementById('loginStatus').innerText = 'Successfully logged in!';
-          } catch (error) {
-            console.error('Login failed', error);
-            document.getElementById('loginStatus').innerText = 'Login failed. Please try again.';
-          }
-        });
-      
-        document.getElementById('loginWithGoogle').addEventListener('click', loginWithGoogle);
-      </script>
-      
-        </div> -->
-        
-        <div class="annons"><p>ANNONS</p></div>
-        <div class="annons2"><p>ANNONS</p></div>
-
-        <div class="right-ad"></div>
-        <div class="right-ad2"></div>
-        <div class="left-ad">
-        <div class="left-ad-header"> </div>
-        </div>
-        <div class="left-ad2"> </div>
-        <div class="left-ad3"> </div>
-        <footer>  
-        </footer>
+<body>
+<header>
+  <div class="logo">
+    <h1>Rubenstein Times</h1>
+  </div>
+  <span class="header-streck"></span>
+  <nav class="navbar">
+    <li><button type="button" id="datum">Senaste nytt</button></li>
+    <li><button type="button" id="toppNyheter">Toppnyheter</button></li>
+    <li><button type="button" id="politik">Politik</button></li>
+    <input type="text" id="search" placeholder="Sök" size="4">
+  </nav>
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <div class="ticker-item">Entire Facebook Staff Laughs As Man Tightens Privacy Settings</div>
+      <div class="ticker-item">Despondent Jeff Bezos Realizes He’ll Have To Work For 9 Seconds To Earn Back Money He Lost In Divorce</div>
+      <div class="ticker-item">Pokémon Go player stabbed, keeps playing</div>
+      <div class="ticker-item">Idiot Zoo Animal With Zero Predators Still Protective Of Young </div>
+      <div class="ticker-item">Man Tries to Rob a Bank After Paying $500 to a Wizard to Make Him Invisible</div>
+      <div class="ticker-item">Third-Grader Clearly Biting Off More Than He Can Chew At Elementary School Book Fair</div>
+      <div class="ticker-item">Cyclists Bike Stolen at Police Station while Reporting iPhone Theft</div>
+      <div class="ticker-item">Ebola Nurse: Stop calling me the 'Ebola Nurse'.</div>
+      <div class="ticker-item">Researchers No Closer To Understanding What The Fuck You’re Talking About </div>
+      <div class="ticker-item">Authentic bitters seitan pug single-origin coffee whatever.</div>
+      <!-- DUPLICERAR FÖR ATT BÖRJA OM SMOOOOOOTH!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <div class="ticker-item">Entire Facebook Staff Laughs As Man Tightens Privacy Settings</div>
+      <div class="ticker-item">Despondent Jeff Bezos Realizes He’ll Have To Work For 9 Seconds To Earn Back Money He Lost In Divorce</div>
+      <div class="ticker-item">Pokémon Go player stabbed, keeps playing</div>
+      <div class="ticker-item">Idiot Zoo Animal With Zero Predators Still Protective Of Young </div>
+      <div class="ticker-item">Man Tries to Rob a Bank After Paying $500 to a Wizard to Make Him Invisible</div>
+      <div class="ticker-item">Third-Grader Clearly Biting Off More Than He Can Chew At Elementary School Book Fair</div>
+      <div class="ticker-item">Cyclists Bike Stolen at Police Station while Reporting iPhone Theft</div>
+      <div class="ticker-item">Ebola Nurse: Stop calling me the 'Ebola Nurse'.</div>
+      <div class="ticker-item">Researchers No Closer To Understanding What The Fuck You’re Talking About </div>
+      <div class="ticker-item">Authentic bitters seitan pug single-origin coffee whatever.</div>
     </div>
+  </header>
+  <div class="container">
+    <div class="left-ads">
+      <div class="annons"><p>ANNONS</p></div>
+      <div class="left-ad-one">
+        <img src="/src/images/eduardo/edward.gif" alt="edwards spary">
+      </div>
+      <div class="left-ad-two">
+        <img src="/src/images/Yoggi.png" alt="yoggi korv">
+      </div>
+    </div>
+    <div class="content">
+      <main class="news-articles"></main>
+      <aside>
+        <div class="kim-wrapper">
+          <img class="kimsDating" src="/src/images/kims_dejting2.png" alt="Kim laddas...">
+          <img class="kimSvar" src="/src/images/kimsText.png" alt="Kim laddas...">
+          <p class="kimsText" id="kimsText"></p>
+        </div>
+        <img id="randomSaab" src="" alt="Saab 900 laddas...">
+        <div class="olle-wrapper">
+          <img class="olle" src="/src/images/Olle.png" alt="Olle laddas...">
+          <img class="olleSvar" src="/src/images/ollesvar.png" alt="Olle laddas...">
+          <p class="ollesText" id="ollesText" ></p>
+        </div>
+        <div class="doden-wrapper">
+          <img class="doden" src="/src/images/doden.png" alt="Döden laddas...">
+          <img class="dodenSvar" src="/src/images/dodenInfo.png" alt="Olle laddas...">
+          <p class="dodenText" id="dodenText" ></p>
+        </div>
+        <div class="pharaoh-wrapper">
+          <img class="pharaoh" src="/src/images/pharao.png" alt="laddas...">
+          <img class="pharaohFavo" src="/src/images/Pharaohs-Favoriter.png" alt="laddas...">
+          <img id="randomPyramid" src="" alt="Pyramid laddas...">
+        </div>
+        <div class="tomten-wrapper">
+          <img class="tomtenExtra1" src="/src/images/extra.png" alt="laddas...">
+          <img class="tomten" src="/src/images/tomten.png" alt="laddas...">
+          <img class="tomtenExtra2" src="/src/images/extra.png" alt="laddas...">
+          <p class="tomtenText" id="tomtenText" ></p>
+        </div>
+        <img class="olen" src="/src/images/olen.png" alt="laddas...">
+        <div class="kungen-wrapper">
+          <img class="kungen" src="/src/images/kungen.png" alt="laddas...">
+          <img class="kungenTips" src="/src/images/kungensTips.png" alt="laddas...">
+          <p class="kungenText" id="kungenText" ></p>
+        </div>
+      </aside>
+    </div>
+    <div class="right-ads">
+      <div class="annons"><p>ANNONS</p></div>
+      <div class="right-ad-one">
+        <img src="/src/images/slobodan-reklam.png" alt="slobodan">
+      </div>
+      <div class="right-ad-two">
+        <img src="/src/images/takbox.png" alt="takbox">
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="/src/scripts/index.js"></script>
   <script type="module" src="/src/scripts/ads.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/appwrite"></script>
  <!-- <script language="JavaScript" type="text/javascript">document.write(quotes[Math.round(Math.random()*(quotes.length-1))]);</script>  -->
-  </body>
+</body>
 </html>

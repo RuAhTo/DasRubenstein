@@ -1,0 +1,51 @@
+.annons {
+  position: sticky;
+  top: 0;
+  display: block;
+  padding-bottom: 0.5rem;
+  border: black 10px;
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.left-ads,
+.right-ads {
+  display: none;
+}
+
+.left-ad-one,
+.left-ad-two,
+.right-ad-one,
+.right-ad-two {
+  position: sticky;
+  top: 1.25rem;
+  background-color: black;
+}
+
+.transition-effect {
+  transition: opacity 0.5s ease-in-out, top 0.8s ease-in-out;
+  opacity: 0; /* Start with elements hidden, adjust as needed */
+}
+
+@media (min-width: 425px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .left-ads,
+  .right-ads {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (min-width: 2560px) {
+}
