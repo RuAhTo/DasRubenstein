@@ -4,7 +4,7 @@
 //     .setEndpoint('https://cloud.appwrite.io/v1')
 //     .setProject('65ba5076a990069110d4');
 
-import { loadKimQuotes } from "/src/scripts/kim.js";
+import { loadKimQuotes } from "../scripts/kim";
 loadKimQuotes();
 
 import { loadOlleQuotes } from "../scripts/olle";

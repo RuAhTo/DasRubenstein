@@ -11,8 +11,13 @@ const rightAdTwo = document.querySelector(".right-ad-two");
 const minimizeHeaderAtHeight =
   header.offsetHeight - navbar.offsetHeight - tickerWrapper.offsetHeight;
 
-leftAdTwo.style.opacity = "0";
-rightAdTwo.style.opacity = "0";
+if (window.pageYOffset > window.innerHeight) {
+  leftAdOne.style.opacity = "0";
+  rightAdOne.style.opacity = "0";
+} else {
+  leftAdTwo.style.opacity = "0";
+  rightAdTwo.style.opacity = "0";
+}
 
 window.addEventListener("scroll", () => {
   const viewportHeight = window.innerHeight; // Get the viewport height for a full page scroll
