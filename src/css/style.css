@@ -51,39 +51,41 @@ img {
 
 .navbar {
   display: flex;
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  gap: 2rem;
-  width: 100%; /* Ensures navbar takes full width */
-  height: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0;
   overflow: hidden;
   user-select: none;
-  background-color: #ffffff; /* Dark background */
+  background-color: #ffffff;
 }
 
 .navbar ul {
-  list-style-type: none; /* Removes default list styling */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Use flexbox to layout children horizontally */
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-}
-.navbar ul li {
-  display: flex; /* Flex display for horizontal alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  list-style-type: none;
 }
 
-.navbar ul li a {
-  display: block;
-  color: white; /* Text color for the links */
+.navbar ul li button {
+  padding: 0.25rem;
   text-align: center;
-  padding: 14px 16px; /* Padding around the links */
-  text-decoration: none; /* Removes underline from links */
+  text-decoration: none;
+  color: black;
 }
 
-.navbar ul li a:hover {
-  background-color: #ddd; /* Background color on hover */
-  color: black; /* Text color on hover */
+.navbar ul li button:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+.navbar input {
+  width: 80%;
+  padding: 0.25rem;
 }
 
 .header-streck {
@@ -306,6 +308,10 @@ aside {
   .logo h1 {
     font-size: 2.75rem;
   }
+
+  .navbar input {
+    width: 20.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -315,6 +321,23 @@ aside {
 
   .logo h1 {
     font-size: 3.5rem;
+  }
+
+  .navbar {
+    flex-direction: row;
+    padding: 1rem 0;
+  }
+
+  .navbar ul {
+    width: auto;
+  }
+
+  .navbar ul li button {
+    padding: 0.5rem;
+  }
+
+  .navbar input {
+    padding: 0.5rem;
   }
 
   .content {
