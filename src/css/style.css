@@ -97,6 +97,7 @@ img {
   padding: 0.25rem 0;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.9);
+  max-width: 100%;
 }
 
 .ticker {
