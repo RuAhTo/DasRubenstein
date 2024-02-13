@@ -21,6 +21,7 @@ loadKungenQuotes();
 
 import { fetchRealNews } from "./realNews";
 import { fetchFakeNews } from "./fakeNews";
+import { FetchBookmarkedNews } from "./bookmarks";
 import { displayNews } from "./news";
 
 const fakeArticles = await fetchFakeNews();
@@ -38,6 +39,10 @@ document.getElementById("politik").addEventListener("click", async () => {
     await fetchRealNews("&category=politics"),
     fakeArticles.filter((article) => article.category.includes("politics"))
   );
+});
+
+document.querySelector("#bookmarks").addEventListener("click", () => {
+  displayNews(FetchBookmarkedNews());
 });
 
 document.getElementById("search").addEventListener("keyup", async (event) => {

@@ -86,6 +86,12 @@ img {
   background-color: #ddd;
 }
 
+.navbar ul li button > * {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
 .navbar input {
   width: 80%;
   padding: 0.25rem;

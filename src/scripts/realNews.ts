@@ -20,7 +20,9 @@ export const fetchRealNews = async (query: string): Promise<NewsArticle[] | null
     })
     .catch((error) => {
       //TODO: if error == too many requests, use new api key
+      //!!! Code 429, TOO MANY REQUESTS !!!
       console.log(error);
+
       return null;
     });
 }

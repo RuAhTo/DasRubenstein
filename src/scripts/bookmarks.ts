@@ -23,10 +23,16 @@ export const ToggleArticleBookmarked = ({
     if(bookmarkedArticle.length > 0) {
         bookmarks.splice(bookmarks.indexOf(bookmarkedArticle[0]), 1);
     } else {
-        bookmarks.push({article_id, image_url, video_url, title, description, category, link, pubDate })
+        bookmarks.push({ article_id, image_url, video_url, title, description, category, link, pubDate })
     }
     localStorage.setItem("bookmarked-articles", JSON.stringify(bookmarks));
 
     if(!articleBookmarkIcon) return;
     articleBookmarkIcon.innerText = GetArticleBookmarkStatus(article_id);
+}
+
+export const FetchBookmarkedNews = (): NewsArticle[] => {
+    return bookmarks.length > 0 
+    ? [...bookmarks] 
+    : [{title: `${"<div><p>Du har inga sparade nyheter.</p><p>Spara med <i class='material-icons'>bookmark_border</i> knappen!</p></div>"}`}];
 }

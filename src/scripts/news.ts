@@ -56,9 +56,11 @@ export const displayNews = (articles: NewsArticle[], fakeArticles?: NewsArticle[
               : ""
           }    
           <div class="news-article-bookmark-source-date-wrapper">
-            <button class="news-article-toggle-bookmark" type="button">
-              <i class="material-icons">${GetArticleBookmarkStatus(article.article_id)}</i>
-            </button>          
+            ${article.article_id
+              ? `<button class="news-article-toggle-bookmark" type="button">
+                  <i class="material-icons">${GetArticleBookmarkStatus(article.article_id)}</i>
+                </button>`
+              : ""}
             <div class="news-article-source-date-wrapper">          
               ${
                 article.link
