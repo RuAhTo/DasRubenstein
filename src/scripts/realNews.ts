@@ -6,7 +6,8 @@ const newsDataIoKeys: string[] = [
   "pub_37022a971a5dd4d83e968c09e01d9dbb47c0a",
   "pub_3745676b8bf54a1510608d38e14ff61ac979d",
 ];
-const apiKey: string = newsDataIoKeys[0]; //TODO: change key automatically when one runs out
+let apiKeyIndex = 0;
+let apiKey: string = newsDataIoKeys[apiKeyIndex];
 
 export const fetchRealNews = async (query: string): Promise<NewsArticle[] | null> => {
   const languages = ["en", "sv", "de"]; //English, Swedish, Und natürlich Deutsch
@@ -18,11 +19,18 @@ export const fetchRealNews = async (query: string): Promise<NewsArticle[] | null
     .then((response) => {
       return response.data.results as NewsArticle[];
     })
-    .catch((error) => {
-      //TODO: if error == too many requests, use new api key
-      //!!! Code 429, TOO MANY REQUESTS !!!
-      console.log(error);
+    .catch(async (error) => {
+      //Code 429 == TOO MANY REQUESTS
+      if(error.response.status == 429) { 
+        apiKeyIndex += 1;
 
+        if(apiKeyIndex < newsDataIoKeys.length) {
+          apiKey = newsDataIoKeys[apiKeyIndex];
+          return await fetchRealNews(query);
+        }
+      }
+      
+      console.error(error);
       return null;
     });
 }
