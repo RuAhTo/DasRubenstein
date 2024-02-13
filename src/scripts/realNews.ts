@@ -13,7 +13,6 @@ export const fetchRealNews = async (query: string): Promise<NewsArticle[] | null
   const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=${languages}${
     query || ""
   }`;
-
   return await axios
     .get(url)
     .then((response) => {

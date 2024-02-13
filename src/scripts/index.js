@@ -55,6 +55,7 @@ document.getElementById("search").addEventListener("keyup", async (event) => {
   }
 });
 
+// displayNews(fakeArticles);
 displayNews(await fetchRealNews(""), fakeArticles);
 
 /* function finHund(){

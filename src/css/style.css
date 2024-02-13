@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 @font-face {
   font-family: Chomsky;
   font-weight: normal;
@@ -173,10 +176,23 @@ aside {
   padding-top: 0.75rem;
 }
 
+.news-article-bookmark-source-date-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+}
+
+.news-article-toggle-bookmark {
+  background-color: white;
+}
+
+.news-article-toggle-bookmark i {
+  color: black;
+}
+
 .news-article-source-date-wrapper {
   display: flex;
-  padding-top: 0.75rem;
-  align-self: flex-end;
+  flex-direction: column;
 }
 
 .news-article-source,
