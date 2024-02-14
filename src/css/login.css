@@ -1,8 +1,9 @@
 
 /* Container for the login modal */
 .login {
-    margin-top: -300px;
-    margin-left: -600px;
+  position: absolute;
+    margin-top: -200px;
+    margin-left: -1000px;
   }
   
   #loginModal {

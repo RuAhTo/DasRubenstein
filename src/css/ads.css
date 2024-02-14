@@ -13,8 +13,12 @@
 .right-ads {
   display: none;
 }
+.left-ad-one {
+  width: 97%;
+  margin-left: 7px;
+}
 
-.left-ad-one,
+.left-ad-one, 
 .left-ad-two,
 .right-ad-one,
 .right-ad-two {
