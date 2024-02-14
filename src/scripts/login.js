@@ -6,6 +6,12 @@ document.getElementById('loginWithGoogle').addEventListener('click', () => {
 });
 
 
+document.getElementById('subscribe').addEventListener('click', () => {
+  loginWithGoogle();
+});
+
+
+
 import { auth } from './firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
 
