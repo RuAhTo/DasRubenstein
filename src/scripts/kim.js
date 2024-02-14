@@ -3,7 +3,7 @@ export async function loadKimQuotes() {
   let quotes = [];
 
   try {
-    const response = await fetch("../json/kim.json");
+    const response = await fetch("./json/kim.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
     showKim();
