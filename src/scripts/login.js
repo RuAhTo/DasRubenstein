@@ -1,5 +1,5 @@
 
-import { loginWithGoogle } from './auth';
+import { loginWithGoogle } from '/auth';
 
 document.getElementById('loginWithGoogle').addEventListener('click', () => {
   loginWithGoogle();

@@ -3,7 +3,7 @@ export async function loadKungenQuotes() {
   let quotes = [];
 
   try {
-    const response = await fetch("./src/json/kungen.json");
+    const response = await fetch("/src/json/kungen.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
     showKungen();

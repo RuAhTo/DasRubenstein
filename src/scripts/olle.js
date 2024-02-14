@@ -3,7 +3,7 @@ export async function loadOlleQuotes() {
   let quotes = [];
 
   try {
-    const response = await fetch("./src/json/olle.json");
+    const response = await fetch("/src/json/olle.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
     showOlle();

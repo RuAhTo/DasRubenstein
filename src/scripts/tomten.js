@@ -3,7 +3,7 @@ export async function loadTomtenQuotes() {
   let quotes = [];
 
   try {
-    const response = await fetch("./src/json/tomten.json");
+    const response = await fetch("/src/json/tomten.json");
     const data = await response.json();
     quotes = data.map((quote) => quote.content);
     showTomten();

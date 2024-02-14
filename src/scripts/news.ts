@@ -1,4 +1,4 @@
-import { GetArticleBookmarkStatus, ToggleArticleBookmarked } from "./bookmarks";
+import { GetArticleBookmarkStatus, ToggleArticleBookmarked } from "./bookmarks.ts";
 
 const newsArticlesContainer = document.querySelector(".news-articles") as HTMLDivElement;
 

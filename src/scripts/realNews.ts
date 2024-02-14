@@ -1,5 +1,5 @@
 import axios from "axios";
-import { NewsArticle } from "./news";
+import { NewsArticle } from "./news.ts";
 
 const newsDataIoKeys: string[] = [
   "pub_3707400defd076981069b5b55870cb59c8cf2",
