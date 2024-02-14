@@ -58,7 +58,7 @@
     </div>
     
     <script type="module">
-      import { loginUser, loginWithGoogle } from './src/scripts/auth.js';
+      import { loginUser, loginWithGoogle } from './src/scripts/auth.ts';
     
       document.getElementById('loginForm').addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -247,11 +247,11 @@
     </div>
 
     <script type="module" src="src/scripts/index.ts"></script>
-    <script type="module" src="src/scripts/ads.js"></script>
+    <script type="module" src="src/scripts/ads.ts"></script>
     <script src="https://cdn.jsdelivr.net/npm/appwrite"></script>
-    <script type="module" src="src/scripts/login.js"></script>
-    <script type="module" src="src/scripts/auth.js"></script>
-    <script type="module" src="src/scripts/firebaseConfig.js"></script>
+    <script type="module" src="scripts/login.ts"></script>
+    <script type="module" src="scripts/auth.ts"></script>
+    <script type="module" src="scripts/firebaseConfig.ts"></script>
 
     <!-- <script language="JavaScript" type="text/javascript">document.write(quotes[Math.round(Math.random()*(quotes.length-1))]);</script>  -->
   </body>

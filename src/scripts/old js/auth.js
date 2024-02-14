@@ -1,4 +1,4 @@
-import { auth } from './firebaseConfig';
+import { auth } from '../firebaseConfig';
 import { signInWithEmailAndPassword, signInWithRedirect, GoogleAuthProvider, getRedirectResult, onAuthStateChanged } from '/node_modules/firebase/auth';
 
 export const loginUser = async (email, password) => {
