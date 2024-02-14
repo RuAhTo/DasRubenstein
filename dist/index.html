@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Das Rubenstein news site" />
-    <link rel="stylesheet" href="./src/css/normalize.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/ads.css" />
-    <link rel="stylesheet" href="./src/css/login.css" />
-    <link rel="icon" type="image/svg+xml" href="/src/images/eagle.png" />
+    <link rel="icon" type="image/svg+xml" href="/assets/eagle-PKHI3z2s.png" />
     <title>Rubenstein Times</title>
     <!-- Google tag (gtag.js) -->
     <script
@@ -24,6 +20,8 @@
 
       gtag("config", "G-9K9W6GLBKG");
     </script>
+    <script type="module" crossorigin src="/assets/index-ngnENMz1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-W_4ekRJF.css">
   </head>
   <body>
     <header>
@@ -57,25 +55,6 @@
 
     </div>
     
-    <script type="module">
-      import { loginUser, loginWithGoogle } from './src/scripts/auth.ts';
-    
-      document.getElementById('loginForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        try {
-          const response = await loginUser(email, password);
-          console.log('Login successful', response);
-          document.getElementById('loginStatus').innerText = 'Successfully logged in!';
-        } catch (error) {
-          console.error('Login failed', error);
-          document.getElementById('loginStatus').innerText = 'Login failed. Please try again.';
-        }
-      });
-    
-      document.getElementById('loginWithGoogle').addEventListener('click', loginWithGoogle);
-    </script>
 
       <div class="ticker-wrap">
         <div class="ticker">
@@ -155,10 +134,10 @@
       <div class="left-ads">
         <div class="annons"><p>ANNONS</p></div>
         <div class="left-ad-one">
-          <img src="/src/images/eduardo/edward.gif" alt="edwards spary" />
+          <img src="/assets/edward--uuN_rbE.gif" alt="edwards spary" />
         </div>
         <div class="left-ad-two">
-          <img src="/src/images/Yoggi.png" alt="yoggi korv" />
+          <img src="/assets/Yoggi-t590a_06.png" alt="yoggi korv" />
         </div>
       </div>
       <div class="content">
@@ -167,22 +146,22 @@
           <div class="kim-wrapper">
             <img
               class="kimsDating"
-              src="/src/images/kims_dejting2.png"
+              src="/assets/kims_dejting2-4X53ZGbW.png"
               alt="Kim laddas..."
             />
             <img
               class="kimSvar"
-              src="/src/images/kimsText.png"
+              src="/assets/kimsText-ztl9mO2B.png"
               alt="Kim laddas..."
             />
             <p class="kimsText" id="kimsText"></p>
           </div>
           <img id="randomSaab" src="" alt="Saab 900 laddas..." />
           <div class="olle-wrapper">
-            <img class="olle" src="/src/images/Olle.png" alt="Olle laddas..." />
+            <img class="olle" src="/assets/Olle-iozYxnME.png" alt="Olle laddas..." />
             <img
               class="olleSvar"
-              src="/src/images/ollesvar.png"
+              src="/assets/ollesvar-KORjxpzm.png"
               alt="Olle laddas..."
             />
             <p class="ollesText" id="ollesText"></p>
@@ -190,21 +169,21 @@
           <div class="doden-wrapper">
             <img
               class="doden"
-              src="/src/images/doden.png"
+              src="/assets/doden-9yHT7fTz.png"
               alt="Döden laddas..."
             />
             <img
               class="dodenSvar"
-              src="/src/images/dodenInfo.png"
+              src="/assets/dodenInfo-L9vdQ84c.png"
               alt="Olle laddas..."
             />
             <p class="dodenText" id="dodenText"></p>
           </div>
           <div class="pharaoh-wrapper">
-            <img class="pharaoh" src="/src/images/pharao.png" alt="laddas..." />
+            <img class="pharaoh" src="/assets/pharao-9g8U3DJY.png" alt="laddas..." />
             <img
               class="pharaohFavo"
-              src="/src/images/Pharaohs-Favoriter.png"
+              src="/assets/Pharaohs-Favoriter-Ldc1RKxV.png"
               alt="laddas..."
             />
             <img id="randomPyramid" src="" alt="Pyramid laddas..." />
@@ -212,23 +191,23 @@
           <div class="tomten-wrapper">
             <img
               class="tomtenExtra1"
-              src="src/images/extra.png"
+              src="/assets/extra-7GaEt1Ji.png"
               alt="laddas..."
             />
-            <img class="tomten" src="/src/images/tomten.png" alt="laddas..." />
+            <img class="tomten" src="/assets/tomten-Jp3G_rmh.png" alt="laddas..." />
             <img
               class="tomtenExtra2"
-              src="src/images/extra.png"
+              src="/assets/extra-7GaEt1Ji.png"
               alt="laddas..."
             />
             <p class="tomtenText" id="tomtenText"></p>
           </div>
-          <img class="olen" src="src/images/olen.png" alt="laddas..." />
+          <img class="olen" src="/assets/olen-htg6bzli.png" alt="laddas..." />
           <div class="kungen-wrapper">
-            <img class="kungen" src="src/images/kungen.png" alt="laddas..." />
+            <img class="kungen" src="/assets/kungen-GeRi-uRV.png" alt="laddas..." />
             <img
               class="kungenTips"
-              src="src/images/kungensTips.png"
+              src="/assets/kungensTips-5dvkaFyK.png"
               alt="laddas..."
             />
             <p class="kungenText" id="kungenText"></p>
@@ -238,20 +217,15 @@
       <div class="right-ads">
         <div class="annons"><p>ANNONS</p></div>
         <div class="right-ad-one">
-          <img src="src/images/slobodan-reklam.png" alt="slobodan" />
+          <img src="/assets/slobodan-reklam-8c5iQ4Rf.png" alt="slobodan" />
         </div>
         <div class="right-ad-two">
-          <img src="src/images/takbox.png" alt="takbox" />
+          <img src="/assets/takbox-TteXcymB.png" alt="takbox" />
         </div>
       </div>
     </div>
 
-    <script type="module" src="src/scripts/index.ts"></script>
-    <script type="module" src="src/scripts/ads.ts"></script>
     <script src="https://cdn.jsdelivr.net/npm/appwrite"></script>
-    <script type="module" src="src/scripts/login.ts"></script>
-    <script type="module" src="src/scripts/auth.ts"></script>
-    <script type="module" src="src/scripts/firebaseConfig.ts"></script>
 
     <!-- <script language="JavaScript" type="text/javascript">document.write(quotes[Math.round(Math.random()*(quotes.length-1))]);</script>  -->
   </body>
