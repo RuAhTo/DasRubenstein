@@ -4,19 +4,19 @@
 //     .setEndpoint('https://cloud.appwrite.io/v1')
 //     .setProject('65ba5076a990069110d4');
 
-import { loadKimQuotes } from "/src/scripts/kim.js";
+import { loadKimQuotes } from "/src/scripts/kim.ts";
 loadKimQuotes();
 
-import { loadOlleQuotes } from "/src/scripts/olle.js";
+import { loadOlleQuotes } from "/src/scripts/olle.ts";
 loadOlleQuotes();
 
-import { loadDodenQuotes } from "/src/scripts/doden.js";
+import { loadDodenQuotes } from "/src/scripts/doden.ts";
 loadDodenQuotes();
 
-import { loadTomtenQuotes } from "/src/scripts/tomten.js";
+import { loadTomtenQuotes } from "/src/scripts/tomten.ts";
 loadTomtenQuotes();
 
-import { loadKungenQuotes } from "/src/scripts/kungen.js";
+import { loadKungenQuotes } from "/src/scripts/kungen.ts";
 loadKungenQuotes();
 
 import { fetchRealNews } from "/src/scripts/realNews.ts";
