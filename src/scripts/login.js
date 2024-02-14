@@ -13,7 +13,7 @@ document.getElementById('subscribe').addEventListener('click', () => {
 
 
 import { auth } from './firebaseConfig';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged } from './firebase/auth';
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
