@@ -3,14 +3,14 @@ import { loginWithGoogle } from './auth';
 
 const loginWithGoogleButton = document.getElementById('loginWithGoogle');
 if (loginWithGoogleButton) {
-    loginWithGoogleButton.addEventListener('click', () => {
+    loginWithGoogleButton.addEventListener('click', ():void => {
         loginWithGoogle();
     });
 }
 
 const subscribeButton = document.getElementById('subscribe');
 if (subscribeButton) {
-    subscribeButton.addEventListener('click', () => {
+    subscribeButton.addEventListener('click', ():void => {
         loginWithGoogle();
     });
 }
