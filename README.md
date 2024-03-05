@@ -30,11 +30,11 @@
 6. Öppna webbläsaren och gå till [http://localhost:3000](http://localhost:3000).
 
 ## Konfiguration
-- **API-nycklar:** Denna webbapp använder sig av API:n från https://newsdata.io/. Lägg in din egen API-Nyckel i `src/scripts/realNews.ts`.
+- **API-nycklar:** Denna webbapp använder sig av API:n från [newsdata.io](https://newsdata.io/). Lägg in din egen API-Nyckel i `src/scripts/realNews.ts`.
 
 ## Agil Utveckling
-- **Jira:** Vi har använt oss av Jira för att lägga upp arbetet. https://underachievers.atlassian.net/jira/software/projects/RUB/boards/3.
+- **Jira:** Vi har använt oss av Jira för att lägga upp arbetet. [Jira-sida](https://underachievers.atlassian.net/jira/software/projects/RUB/boards/3).
    
 ## Utveckling
 - **Team:** Vårat team består av Alex Hansen, Simon Lundmark, Robin Rudén och Ruben Ahlin. Tillsammans har vi skapat en alternativ nyhetswebbapplikation för framåttänkande individer som söker sanningen.
-- **Webbapp:** I vår applikation kan användaren få en överskådlig blick av nyhetsflödet samt sortera efter 
+- **Webbapp:** I vår applikation kan användaren få en överskådlig blick av nyhetsflödet samt sortera efter senaste nytt, toppnyheter och politik. Det finns även en sökfunktion där användaren kan söka efter en specifik nyhet. Dessvärre är vår inloggninsfunktion ännu inte helt fungerande.
