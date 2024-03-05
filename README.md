@@ -1,4 +1,4 @@
-# [Das Rubenstein]
+# Das Rubenstein
 
 ## Tekniker och Verktyg
 - **Vite:** Snabbt byggverktyg för moderna webbapplikationer.
