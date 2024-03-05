@@ -1,11 +1,8 @@
 import axios from "axios";
 import { NewsArticle } from "./news";
 
-const newsDataIoKeys: string[] = [
-  "pub_3707400defd076981069b5b55870cb59c8cf2",
-  "pub_37022a971a5dd4d83e968c09e01d9dbb47c0a",
-  "pub_3745676b8bf54a1510608d38e14ff61ac979d",
-];
+//Lägg till api-Nyckel från newsdata.io
+const newsDataIoKeys: string[] = [];
 let apiKeyIndex = 0;
 let apiKey: string = newsDataIoKeys[apiKeyIndex];
 
